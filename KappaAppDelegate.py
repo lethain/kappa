@@ -7,7 +7,7 @@
 #
 
 import twitter
-import objc, pickle
+import os, objc, pickle, datetime
 from Foundation import *
 from AppKit import *
 
@@ -38,14 +38,17 @@ class KappaAppDelegate(NSObject):
     mainWindow = objc.IBOutlet()
     inputWindow = objc.IBOutlet()
     prefsWindow = objc.IBOutlet()
+    lastTimeLabel = objc.IBOutlet()
+    nextTimeLabel = objc.IBOutlet()
+    timeProgressIndicator = objc.IBOutlet()
     
     prefs = {
         'retrievalInterval':10.0,
         'username':None,
         'password':None,
-    
     }
     
+    progressIndicatorTimer = None
     lastRetrieval = None
     nextRetrieval = None
     twits = []
@@ -61,10 +64,46 @@ class KappaAppDelegate(NSObject):
             pass
         
     def storePreferences(self):
-        fout = open(self.pathForFile(USER_PREFS_FILE),'r')
+        fout = open(self.pathForFile(USER_PREFS_FILE),'w')
         pickle.dump(self.prefs,fout)
         fout.close()
+        
+    def incrementProgressIndicator(self):
+        if self.timeProgressIndicator.doubleValue() >= 100.0:
+            self.progressIndicatorTimer.invalidate()
+            self.checkForTweets()
+            self.resetTime()
+        else:
+            self.timeProgressIndicator.incrementBy_(1.0)
     
+    def resetTime(self):
+        now = datetime.datetime.now()
+        self.lastRetrieval = now
+        self.nextRetrieval = now + datetime.timedelta(minutes=int(self.prefs['retrievalInterval']))
+        
+        # Update last retrieval label.
+        hour = self.lastRetrieval.hour
+        minute = self.lastRetrieval.minute
+        minute = minute if minute >= 10 else u"0%s" % minute
+        amPM = 'AM' if hour > 12 else 'PM'
+        hour = hour - 12 if hour > 12 else hour        
+        self.lastTimeLabel.setStringValue_(u"%s:%s %s" % (hour,minute, amPM))
+        
+        
+        # Update next retrieval label.
+        hour = self.nextRetrieval.hour
+        minute = self.nextRetrieval.minute
+        minute = minute if minute >= 10 else u"0%s" % minute
+        amPM = 'AM' if hour > 12 else 'PM'
+        hour = hour - 12 if hour > 12 else hour        
+        self.nextTimeLabel.setStringValue_(u"%s:%s %s" % (hour,minute, amPM))
+        
+        # Reset progress indicator.
+        self.timeProgressIndicator.setDoubleValue_(0.0)
+        interval = (self.prefs['retrievalInterval']*60.0) / 100.0
+        s = objc.selector(self.incrementProgressIndicator,signature="v@:")
+        t = NSTimer.scheduledTimerWithTimeInterval_target_selector_userInfo_repeats_(interval,self,s,None,True)
+        self.progressIndicatorTimer = t
 
     ''' Wrappers for Twitter Functionality '''
     
@@ -92,6 +131,7 @@ class KappaAppDelegate(NSObject):
         self.restorePreferences()
         success = self.login()
         
+        self.resetTime()
         
         
         
@@ -100,7 +140,7 @@ class KappaAppDelegate(NSObject):
     def applicationSupportFolder(self):
         paths = NSSearchPathForDirectoriesInDomains(NSApplicationSupportDirectory,NSUserDomainMask,True)
         basePath = (len(paths) > 0 and paths[0]) or NSTemporaryDirectory()
-        fullPath = basePath.stringByAppendingPathComponent_("MetaWindow")
+        fullPath = basePath.stringByAppendingPathComponent_("Kappa")
         if not os.path.exists(fullPath):
             os.mkdir(fullPath)
         return fullPath
