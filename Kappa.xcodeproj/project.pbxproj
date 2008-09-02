@@ -15,6 +15,7 @@
 		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
 		BE6189040E6D79710037511A /* KAPProgressIndicator.py in Resources */ = {isa = PBXBuildFile; fileRef = BE6189030E6D79710037511A /* KAPProgressIndicator.py */; };
+		BE61895D0E6D8FFE0037511A /* KAPTwitFormatter.py in Resources */ = {isa = PBXBuildFile; fileRef = BE61895C0E6D8FFE0037511A /* KAPTwitFormatter.py */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8D1107320486CEB800E47090 /* Kappa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kappa.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE6189030E6D79710037511A /* KAPProgressIndicator.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = KAPProgressIndicator.py; sourceTree = "<group>"; };
+		BE61895C0E6D8FFE0037511A /* KAPTwitFormatter.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = KAPTwitFormatter.py; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +52,7 @@
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				BE61895C0E6D8FFE0037511A /* KAPTwitFormatter.py */,
 				BE6189030E6D79710037511A /* KAPProgressIndicator.py */,
 				7790198E0C07548A00326F66 /* KappaAppDelegate.py */,
 			);
@@ -172,6 +175,7 @@
 				7790198F0C07548A00326F66 /* KappaAppDelegate.py in Resources */,
 				77C8C1F90C07829500965286 /* MainMenu.xib in Resources */,
 				BE6189040E6D79710037511A /* KAPProgressIndicator.py in Resources */,
+				BE61895D0E6D8FFE0037511A /* KAPTwitFormatter.py in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

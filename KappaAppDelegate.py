@@ -41,6 +41,7 @@ class KappaAppDelegate(NSObject):
     lastTimeLabel = objc.IBOutlet()
     nextTimeLabel = objc.IBOutlet()
     timeProgressIndicator = objc.IBOutlet()
+    inputTextField = objc.IBOutlet()
     
     prefs = None    # initialized in restorePreferences
     
@@ -150,21 +151,14 @@ class KappaAppDelegate(NSObject):
         else:
             self.showPrefsWindow()
             
-            
-    
     def resizeInput(self):
-        mainFrame = self.mainWindow.frame()
-        NSLog(u"mainFrame: %s" % mainFrame)
-        screen = self.mainWindow.screen()
-        
+        mainFrame = self.mainWindow.frame()        
         frameRect = NSMakeRect(mainFrame.origin.x,mainFrame.origin.y-40, mainFrame.size.width, 40)
         self.inputWindow.setFrame_display_(frameRect, True)
-        
     
     def windowDidBecomeMain_(self,sender):
         self.inputWindow.orderFront_(self)
         self.resizeInput()
-        
         
     def windowDidResignMain_(self,sender):
         self.inputWindow.orderOut_(self)
@@ -175,6 +169,12 @@ class KappaAppDelegate(NSObject):
     def windowDidResize_(self,notification):
         self.resizeInput()
         
+    ''' NSControl delegate methods '''
+    
+    def controlTextDidChange_(self,notification):
+        txt = self.inputTextField.stringValue()
+        self.inputWindow.setTitle_(u"%s" % unicode(140-len(txt)))
+    
     ''' Application Delegate Utility Methods '''
             
     def applicationSupportFolder(self):

@@ -41,11 +41,18 @@
 		userBuildSettings = {
 		};
 	};
+	77631A3E0C0748CF005415CB /* main.py */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {655, 308}}";
+			sepNavSelRange = "{381, 0}";
+			sepNavVisRange = "{0, 433}";
+		};
+	};
 	7790198E0C07548A00326F66 /* KappaAppDelegate.py */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {724, 2674}}";
-			sepNavSelRange = "{2000, 0}";
-			sepNavVisRange = "{1219, 1594}";
+			sepNavIntBoundsRect = "{{0, 0}, {724, 3066}}";
+			sepNavSelRange = "{5847, 0}";
+			sepNavVisRange = "{5244, 1463}";
 		};
 	};
 	8D1107260486CEB800E47090 /* Kappa */ = {
@@ -61,7 +68,7 @@
 		argumentStrings = (
 		);
 		autoAttachOnCrash = 1;
-		breakpointsEnabled = 1;
+		breakpointsEnabled = 0;
 		configStateDict = {
 		};
 		customDataFormattersEnabled = 1;
@@ -90,5 +97,13 @@
 	BE6188890E6CBC370037511A /* Code sense */ = {
 		isa = PBXCodeSenseManager;
 		indexTemplatePath = "";
+	};
+	BE6189030E6D79710037511A /* KAPProgressIndicator.py */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {724, 625}}";
+			sepNavSelRange = "{328, 0}";
+			sepNavVisRange = "{0, 329}";
+			sepNavWindowFrame = "{{30, 40}, {783, 738}}";
+		};
 	};
 }
