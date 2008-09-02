@@ -4,6 +4,9 @@
 		activeBuildConfigurationName = Debug;
 		activeExecutable = BE6188780E6CBC280037511A /* Kappa */;
 		activeTarget = 8D1107260486CEB800E47090 /* Kappa */;
+		addToTargets = (
+			8D1107260486CEB800E47090 /* Kappa */,
+		);
 		codeSenseManager = BE6188890E6CBC370037511A /* Code sense */;
 		executables = (
 			BE6188780E6CBC280037511A /* Kappa */,
@@ -38,6 +41,13 @@
 		userBuildSettings = {
 		};
 	};
+	7790198E0C07548A00326F66 /* KappaAppDelegate.py */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {724, 2674}}";
+			sepNavSelRange = "{2000, 0}";
+			sepNavVisRange = "{1219, 1594}";
+		};
+	};
 	8D1107260486CEB800E47090 /* Kappa */ = {
 		activeExec = 0;
 		executables = (
@@ -57,6 +67,7 @@
 		customDataFormattersEnabled = 1;
 		debuggerPlugin = GDBDebugging;
 		disassemblyDisplayState = 0;
+		dylibVariantSuffix = "";
 		enableDebugStr = 1;
 		environmentEntries = (
 		);
@@ -64,6 +75,8 @@
 		executableUserSymbolLevel = 0;
 		libgmallocEnabled = 0;
 		name = Kappa;
+		savedGlobals = {
+		};
 		sourceDirectories = (
 		);
 	};

@@ -42,11 +42,7 @@ class KappaAppDelegate(NSObject):
     nextTimeLabel = objc.IBOutlet()
     timeProgressIndicator = objc.IBOutlet()
     
-    prefs = {
-        'retrievalInterval':10.0,
-        'username':None,
-        'password':None,
-    }
+    prefs = None    # initialized in restorePreferences
     
     progressIndicatorTimer = None
     lastRetrieval = None
@@ -54,29 +50,41 @@ class KappaAppDelegate(NSObject):
     twits = []
     recentTwit = None
     api = None
+        
     
     def restorePreferences(self):
         try:
             fin = open(self.pathForFile(USER_PREFS_FILE), 'r')
-            self.prefs = pickle.load(fin)
+            self.prefs = NSMutableDictionary.dictionaryWithDictionary_(pickle.load(fin))
             fin.close()
         except IOError:
-            pass
+            defaults = {
+                'retrievalInterval':10.0,
+                'username':'',
+                'password':'',
+            }
+            self.prefs = NSMutableDictionary.dictionaryWithDictionary_(defaults)
         
     def storePreferences(self):
+        newDict = {}
+        for key in self.prefs:
+            newDict[key] = self.prefs[key]
+    
         fout = open(self.pathForFile(USER_PREFS_FILE),'w')
-        pickle.dump(self.prefs,fout)
+        pickle.dump(newDict,fout)
         fout.close()
         
     def incrementProgressIndicator(self):
         if self.timeProgressIndicator.doubleValue() >= 100.0:
             self.progressIndicatorTimer.invalidate()
-            self.checkForTweets()
             self.resetTime()
         else:
             self.timeProgressIndicator.incrementBy_(1.0)
     
     def resetTime(self):
+        self.timeProgressIndicator.setDoubleValue_(100.0)
+        self.checkForTweets
+    
         now = datetime.datetime.now()
         self.lastRetrieval = now
         self.nextRetrieval = now + datetime.timedelta(minutes=int(self.prefs['retrievalInterval']))
@@ -89,7 +97,6 @@ class KappaAppDelegate(NSObject):
         hour = hour - 12 if hour > 12 else hour        
         self.lastTimeLabel.setStringValue_(u"%s:%s %s" % (hour,minute, amPM))
         
-        
         # Update next retrieval label.
         hour = self.nextRetrieval.hour
         minute = self.nextRetrieval.minute
@@ -101,9 +108,16 @@ class KappaAppDelegate(NSObject):
         # Reset progress indicator.
         self.timeProgressIndicator.setDoubleValue_(0.0)
         interval = (self.prefs['retrievalInterval']*60.0) / 100.0
+        
+        NSLog(u"interval: %s" % interval)
+        
         s = objc.selector(self.incrementProgressIndicator,signature="v@:")
         t = NSTimer.scheduledTimerWithTimeInterval_target_selector_userInfo_repeats_(interval,self,s,None,True)
         self.progressIndicatorTimer = t
+        
+    def showPrefsWindow(self):
+        NSLog(u"show prefs window")
+        self.prefsWindow.makeKeyAndOrderFront_(self)
 
     ''' Wrappers for Twitter Functionality '''
     
@@ -122,18 +136,44 @@ class KappaAppDelegate(NSObject):
 
             
     
-    ''' Application Delegate Methods '''        
+    ''' Application Delegate Methods '''   
+    
+    def awakeFromNib(self):
+        self.restorePreferences()
                             
     def applicationWillTerminate_(self,sender):
         self.storePreferences()
     
     def applicationDidFinishLaunching_(self, sender):
-        self.restorePreferences()
-        success = self.login()
+        if self.login():
+            self.resetTime()
+        else:
+            self.showPrefsWindow()
+            
+            
+    
+    def resizeInput(self):
+        mainFrame = self.mainWindow.frame()
+        NSLog(u"mainFrame: %s" % mainFrame)
+        screen = self.mainWindow.screen()
         
-        self.resetTime()
+        frameRect = NSMakeRect(mainFrame.origin.x,mainFrame.origin.y-50, mainFrame.size.width, 50)
+        self.inputWindow.setFrame_display_(frameRect, True)
+        
+    
+    def windowDidBecomeMain_(self,sender):
+        self.inputWindow.orderFront_(self)
+        self.resizeInput()
         
         
+    def windowDidResignMain_(self,sender):
+        self.inputWindow.orderOut_(self)
+        
+    def windowDidMove_(self,notification):
+        self.resizeInput()
+        
+    def windowDidResize_(self,notification):
+        self.resizeInput()
         
     ''' Application Delegate Utility Methods '''
             
@@ -147,5 +187,25 @@ class KappaAppDelegate(NSObject):
         
     def pathForFile(self,filename):
         return self.applicationSupportFolder().stringByAppendingPathComponent_(filename)
+        
+    ''' Accessors and mutators '''
+    
+    def username(self):
+        return self.prefs['username']
+        
+    def setUsername_(self,val):
+        self.prefs['username'] = val
+        
+    def password(self):
+        return self.prefs['password']
+        
+    def setPassword_(self,val):
+        self.prefs['password'] = val
+        
+    def retrievalInterval(self):
+        return self.prefs['retrievalInterval']
+        
+    def setRetrievalInterval(self,val):
+        self.prefs['retrievalInterval'] = val
 
 
