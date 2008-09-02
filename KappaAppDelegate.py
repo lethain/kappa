@@ -7,7 +7,7 @@
 #
 
 import twitter
-import os, objc, pickle, datetime
+import os, objc, pickle, datetime, urllib2
 from Foundation import *
 from AppKit import *
 
@@ -42,6 +42,7 @@ class KappaAppDelegate(NSObject):
     nextTimeLabel = objc.IBOutlet()
     timeProgressIndicator = objc.IBOutlet()
     inputTextField = objc.IBOutlet()
+    twitDictsController = objc.IBOutlet()
     
     prefs = None    # initialized in restorePreferences
     
@@ -49,7 +50,7 @@ class KappaAppDelegate(NSObject):
     lastRetrieval = None
     nextRetrieval = None
     twits = []
-    recentTwit = None
+    twitDicts = []
     api = None
         
     
@@ -81,36 +82,31 @@ class KappaAppDelegate(NSObject):
             self.resetTime()
         else:
             self.timeProgressIndicator.incrementBy_(1.0)
+            
+    def kappaTime(self,dt):
+        'Takes a datetime and returns a string in "6:04 AM" format.'
+        amPm = 'AM' if dt.hour < 12 or dt.hour == 24 else 'PM'
+        hour = dt.hour - 12 if dt.hour > 12 else dt.hour
+        minute = dt.minute if dt.minute >= 10 else u"0%s" % dt.minute
+        return u"%s:%s %s" % (hour,minute,amPm)
     
     def resetTime(self):
         self.timeProgressIndicator.setDoubleValue_(100.0)
-        self.checkForTweets
+        self.checkForTweets()
     
         now = datetime.datetime.now()
         self.lastRetrieval = now
         self.nextRetrieval = now + datetime.timedelta(minutes=int(self.prefs['retrievalInterval']))
         
         # Update last retrieval label.
-        hour = self.lastRetrieval.hour
-        minute = self.lastRetrieval.minute
-        minute = minute if minute >= 10 else u"0%s" % minute
-        amPM = 'AM' if hour > 12 else 'PM'
-        hour = hour - 12 if hour > 12 else hour        
-        self.lastTimeLabel.setStringValue_(u"%s:%s %s" % (hour,minute, amPM))
+        self.lastTimeLabel.setStringValue_(self.kappaTime(self.lastRetrieval))
         
         # Update next retrieval label.
-        hour = self.nextRetrieval.hour
-        minute = self.nextRetrieval.minute
-        minute = minute if minute >= 10 else u"0%s" % minute
-        amPM = 'AM' if hour > 12 else 'PM'
-        hour = hour - 12 if hour > 12 else hour        
-        self.nextTimeLabel.setStringValue_(u"%s:%s %s" % (hour,minute, amPM))
+        self.nextTimeLabel.setStringValue_(self.kappaTime(self.nextRetrieval))
         
         # Reset progress indicator.
         self.timeProgressIndicator.setDoubleValue_(0.0)
         interval = (self.prefs['retrievalInterval']*60.0) / 100.0
-        
-        NSLog(u"interval: %s" % interval)
         
         s = objc.selector(self.incrementProgressIndicator,signature="v@:")
         t = NSTimer.scheduledTimerWithTimeInterval_target_selector_userInfo_repeats_(interval,self,s,None,True)
@@ -122,16 +118,64 @@ class KappaAppDelegate(NSObject):
 
     ''' Wrappers for Twitter Functionality '''
     
+    @objc.IBAction
+    def submitTwit_(self,sender):
+        NSLog(u"submitting tweet")
+        #self.postMessage(self.inputTextField.stringValue())
+        self.inputTextField.setStringValue_(u"")
+        self.inputWindow.setTitle_(u"140")
+    
     def postMessage(self, msg):
         self.recentTwit = self.api.PostUpdate(msg)
         
+    def updateTwitDict(self):
+        def convertTwit(tweet):
+            objcDict = {} #NSMutableDictionary.alloc().init()
+            objcDict['time'] = self.kappaTime(datetime.datetime.utcfromtimestamp(tweet.created_at_in_seconds))
+            objcDict['user'] = tweet.user
+            objcDict['text'] = tweet.text
+            return NSDictionary.dictionaryWithDictionary_(objcDict)
+            return objcDict
+
+        NSLog(u"self.twits: %s" % self.twits)
+        self.twitDicts = [ convertTwit(x) for x in self.twits[:50] ]
+        NSLog(u"self.twitDicts: %s" % self.twitDicts)
+
+        
     def checkForTweets(self):
-        newTweets = self.api.GetUserTimeline(self.username)
-        NSLog(u"new tweets: %s" % newTweets)
+        if self.api is not None:
+            try:
+                newTweets = self.api.GetFriendsTimeline()
+                self.integrateTweets(newTweets)
+            except urllib2.URLError:
+                pass
+                
+            self.updateTwitDict()
+            NSLog(u"updated twit dict")
+            self.twitDictsController.rearrangeObjects()
+            NSLog(u"rearranged array controller")
+                        
+    def integrateTweets(self,tweets):
+        for tweet in tweets:
+            self.integrateTweet(tweet)
+        NSLog(u"tweets: %s" % self.twits)
+            
+    def integrateTweet(self,tweet):
+        tweets = self.twits
+        wasInserted = False
+        for i in xrange(0,len(tweets),1):
+            stored = tweets[i]
+            if tweet.id == stored.id:
+                break
+            elif tweet.created_at_in_seconds > stored.created_at_in_seconds:
+                tweets.insert(i,tweet)
+                wasInserted = True
+        if not wasInserted:
+            tweets.insert(-1,tweet)
     
     def login(self):
         if self.prefs['username'] and self.prefs['password']:
-            self.api = twitter.Api(username=self.username,password=self.password)
+            self.api = twitter.Api(username=self.username(),password=self.password())
             return True
         return False
 
@@ -195,12 +239,14 @@ class KappaAppDelegate(NSObject):
         
     def setUsername_(self,val):
         self.prefs['username'] = val
+        self.login()
         
     def password(self):
         return self.prefs['password']
         
     def setPassword_(self,val):
         self.prefs['password'] = val
+        self.login()
         
     def retrievalInterval(self):
         return self.prefs['retrievalInterval']

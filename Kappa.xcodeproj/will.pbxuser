@@ -7,6 +7,13 @@
 		addToTargets = (
 			8D1107260486CEB800E47090 /* Kappa */,
 		);
+		breakpoints = (
+			BE6189A20E6DDFA00037511A /* main.m:43 */,
+			BE6189A30E6DDFA10037511A /* ___TERMINATING_DUE_TO_UNCAUGHT_EXCEPTION___ */,
+			BE6189A40E6DDFA20037511A /* ___TERMINATING_DUE_TO_UNCAUGHT_EXCEPTION___ */,
+			BE6189A50E6DDFA30037511A /* ___TERMINATING_DUE_TO_UNCAUGHT_EXCEPTION___ */,
+			BE6189A60E6DDFA40037511A /* ___TERMINATING_DUE_TO_UNCAUGHT_EXCEPTION___ */,
+		);
 		codeSenseManager = BE6188890E6CBC370037511A /* Code sense */;
 		executables = (
 			BE6188780E6CBC280037511A /* Kappa */,
@@ -17,7 +24,7 @@
 				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
 				PBXFileTableDataSourceColumnWidthsKey = (
 					20,
-					341,
+					477,
 					20,
 					48.16259765625,
 					43,
@@ -37,22 +44,74 @@
 			PBXPerProjectTemplateStateSaveDate = 242007080;
 			PBXWorkspaceStateSaveDate = 242007080;
 		};
+		perUserProjectItems = {
+			BE61888C0E6CC5D40037511A /* PBXBookmark */ = BE61888C0E6CC5D40037511A /* PBXBookmark */;
+			BE6189A70E6DDFAF0037511A /* PBXTextBookmark */ = BE6189A70E6DDFAF0037511A /* PBXTextBookmark */;
+			BE6189A80E6DDFAF0037511A /* PBXTextBookmark */ = BE6189A80E6DDFAF0037511A /* PBXTextBookmark */;
+			BE6189A90E6DDFAF0037511A /* PBXTextBookmark */ = BE6189A90E6DDFAF0037511A /* PBXTextBookmark */;
+			BE6189AA0E6DDFAF0037511A /* PBXTextBookmark */ = BE6189AA0E6DDFAF0037511A /* PBXTextBookmark */;
+			BE6189AD0E6DDFAF0037511A /* PBXTextBookmark */ = BE6189AD0E6DDFAF0037511A /* PBXTextBookmark */;
+			BE6189BE0E6DDFC90037511A /* PBXTextBookmark */ = BE6189BE0E6DDFC90037511A /* PBXTextBookmark */;
+			BE6189BF0E6DDFC90037511A /* PBXTextBookmark */ = BE6189BF0E6DDFC90037511A /* PBXTextBookmark */;
+			BE6189C20E6DE0190037511A /* PBXTextBookmark */ = BE6189C20E6DE0190037511A /* PBXTextBookmark */;
+			BE6189C30E6DE0190037511A /* PBXTextBookmark */ = BE6189C30E6DE0190037511A /* PBXTextBookmark */;
+			BE6189C60E6DE05B0037511A /* PBXTextBookmark */ = BE6189C60E6DE05B0037511A /* PBXTextBookmark */;
+			BE6189C70E6DE05B0037511A /* PBXTextBookmark */ = BE6189C70E6DE05B0037511A /* PBXTextBookmark */;
+			BE6189CA0E6DE08E0037511A /* PBXTextBookmark */ = BE6189CA0E6DE08E0037511A /* PBXTextBookmark */;
+			BE6189CB0E6DE08E0037511A /* PBXTextBookmark */ = BE6189CB0E6DE08E0037511A /* PBXTextBookmark */;
+			BE6189CE0E6DE0E20037511A /* PBXTextBookmark */ = BE6189CE0E6DE0E20037511A /* PBXTextBookmark */;
+			BE6189CF0E6DE0E20037511A /* PBXTextBookmark */ = BE6189CF0E6DE0E20037511A /* PBXTextBookmark */;
+			BE6189D40E6DE1360037511A /* PBXTextBookmark */ = BE6189D40E6DE1360037511A /* PBXTextBookmark */;
+			BE6189D50E6DE1360037511A /* PBXTextBookmark */ = BE6189D50E6DE1360037511A /* PBXTextBookmark */;
+			BE6189D80E6DE3EC0037511A /* PBXTextBookmark */ = BE6189D80E6DE3EC0037511A /* PBXTextBookmark */;
+			BE6189D90E6DE3EC0037511A /* PBXTextBookmark */ = BE6189D90E6DE3EC0037511A /* PBXTextBookmark */;
+			BE6189DB0E6DE5800037511A /* PBXTextBookmark */ = BE6189DB0E6DE5800037511A /* PBXTextBookmark */;
+			BE6189DC0E6DE5800037511A /* PBXTextBookmark */ = BE6189DC0E6DE5800037511A /* PBXTextBookmark */;
+			BE6189DE0E6DE5CD0037511A /* PBXTextBookmark */ = BE6189DE0E6DE5CD0037511A /* PBXTextBookmark */;
+			BE6189DF0E6DE5CD0037511A /* PBXTextBookmark */ = BE6189DF0E6DE5CD0037511A /* PBXTextBookmark */;
+			BE6189E20E6DE6640037511A /* PBXTextBookmark */ = BE6189E20E6DE6640037511A /* PBXTextBookmark */;
+			BE6189E30E6DE6640037511A /* PBXTextBookmark */ = BE6189E30E6DE6640037511A /* PBXTextBookmark */;
+			BE6189E90E6DE7220037511A /* PBXTextBookmark */ = BE6189E90E6DE7220037511A /* PBXTextBookmark */;
+			BE6189EA0E6DE7220037511A /* PBXTextBookmark */ = BE6189EA0E6DE7220037511A /* PBXTextBookmark */;
+			BE6189ED0E6DE7330037511A /* PBXTextBookmark */ = BE6189ED0E6DE7330037511A /* PBXTextBookmark */;
+			BE6189EE0E6DE7330037511A /* PBXTextBookmark */ = BE6189EE0E6DE7330037511A /* PBXTextBookmark */;
+			BE6189F10E6DE7620037511A /* PBXTextBookmark */ = BE6189F10E6DE7620037511A /* PBXTextBookmark */;
+			BE6189F20E6DE7620037511A /* PBXTextBookmark */ = BE6189F20E6DE7620037511A /* PBXTextBookmark */;
+			BE6189F40E6DE8290037511A /* PBXTextBookmark */ = BE6189F40E6DE8290037511A /* PBXTextBookmark */;
+			BE6189F50E6DE8290037511A /* PBXTextBookmark */ = BE6189F50E6DE8290037511A /* PBXTextBookmark */;
+			BE6189F80E6DE87D0037511A /* PBXTextBookmark */ = BE6189F80E6DE87D0037511A /* PBXTextBookmark */;
+			BE6189F90E6DE87D0037511A /* PBXTextBookmark */ = BE6189F90E6DE87D0037511A /* PBXTextBookmark */;
+			BE6189FB0E6DE88B0037511A /* PBXTextBookmark */ = BE6189FB0E6DE88B0037511A /* PBXTextBookmark */;
+			BE6189FC0E6DE88B0037511A /* PBXTextBookmark */ = BE6189FC0E6DE88B0037511A /* PBXTextBookmark */;
+			BE618A000E6DE91B0037511A /* PBXTextBookmark */ = BE618A000E6DE91B0037511A /* PBXTextBookmark */;
+			BE618A010E6DE91B0037511A /* PBXTextBookmark */ = BE618A010E6DE91B0037511A /* PBXTextBookmark */;
+			BE618A020E6DE9260037511A /* PBXTextBookmark */ = BE618A020E6DE9260037511A /* PBXTextBookmark */;
+			BE618A030E6DE9260037511A /* PBXTextBookmark */ = BE618A030E6DE9260037511A /* PBXTextBookmark */;
+			BE618A060E6DE93E0037511A /* PBXTextBookmark */ = BE618A060E6DE93E0037511A /* PBXTextBookmark */;
+			BE618A070E6DE93E0037511A /* PBXTextBookmark */ = BE618A070E6DE93E0037511A /* PBXTextBookmark */;
+			BE618A0A0E6DE95F0037511A /* PBXTextBookmark */ = BE618A0A0E6DE95F0037511A /* PBXTextBookmark */;
+			BE618A0B0E6DE95F0037511A /* PBXTextBookmark */ = BE618A0B0E6DE95F0037511A /* PBXTextBookmark */;
+			BE618A0E0E6DE9820037511A /* PBXTextBookmark */ = BE618A0E0E6DE9820037511A /* PBXTextBookmark */;
+			BE618A0F0E6DE9820037511A /* PBXTextBookmark */ = BE618A0F0E6DE9820037511A /* PBXTextBookmark */;
+			BE618A120E6DE9BF0037511A /* PBXTextBookmark */ = BE618A120E6DE9BF0037511A /* PBXTextBookmark */;
+			BE618A130E6DE9BF0037511A /* PBXTextBookmark */ = BE618A130E6DE9BF0037511A /* PBXTextBookmark */;
+		};
 		sourceControlManager = BE6188880E6CBC370037511A /* Source Control */;
 		userBuildSettings = {
 		};
 	};
 	77631A3E0C0748CF005415CB /* main.py */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {655, 308}}";
-			sepNavSelRange = "{381, 0}";
-			sepNavVisRange = "{0, 433}";
+			sepNavIntBoundsRect = "{{0, 0}, {655, 322}}";
+			sepNavSelRange = "{240, 0}";
+			sepNavVisRange = "{0, 457}";
 		};
 	};
 	7790198E0C07548A00326F66 /* KappaAppDelegate.py */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {724, 3066}}";
-			sepNavSelRange = "{5847, 0}";
-			sepNavVisRange = "{5244, 1463}";
+			sepNavIntBoundsRect = "{{0, 0}, {724, 4424}}";
+			sepNavSelRange = "{4569, 0}";
+			sepNavVisRange = "{3361, 1661}";
 		};
 	};
 	8D1107260486CEB800E47090 /* Kappa */ = {
@@ -98,6 +157,10 @@
 		isa = PBXCodeSenseManager;
 		indexTemplatePath = "";
 	};
+	BE61888C0E6CC5D40037511A /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = 7790198E0C07548A00326F66 /* KappaAppDelegate.py */;
+	};
 	BE6189030E6D79710037511A /* KAPProgressIndicator.py */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {724, 625}}";
@@ -105,5 +168,579 @@
 			sepNavVisRange = "{0, 329}";
 			sepNavWindowFrame = "{{30, 40}, {783, 738}}";
 		};
+	};
+	BE61895C0E6D8FFE0037511A /* KAPTwitFormatter.py */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {724, 625}}";
+			sepNavSelRange = "{265, 0}";
+			sepNavVisRange = "{0, 762}";
+			sepNavWindowFrame = "{{650, 4}, {783, 738}}";
+		};
+	};
+	BE6189A20E6DDFA00037511A /* main.m:43 */ = {
+		isa = PBXFileBreakpoint;
+		actions = (
+		);
+		breakpointStyle = 0;
+		continueAfterActions = 0;
+		countType = 0;
+		delayBeforeContinue = 0;
+		fileReference = 29B97316FDCFA39411CA2CEA /* main.m */;
+		hitCount = 0;
+		ignoreCount = 0;
+		lineNumber = 43;
+		location = Kappa;
+		modificationTime = 242084226.565243;
+		state = 1;
+	};
+	BE6189A30E6DDFA10037511A /* ___TERMINATING_DUE_TO_UNCAUGHT_EXCEPTION___ */ = {
+		isa = PBXSymbolicBreakpoint;
+		actions = (
+		);
+		breakpointStyle = 1;
+		continueAfterActions = 0;
+		countType = 0;
+		delayBeforeContinue = 0;
+		hitCount = 0;
+		ignoreCount = 0;
+		location = CoreFoundation;
+		modificationTime = 242084226.565501;
+		state = 1;
+		symbolName = "___TERMINATING_DUE_TO_UNCAUGHT_EXCEPTION___";
+	};
+	BE6189A40E6DDFA20037511A /* ___TERMINATING_DUE_TO_UNCAUGHT_EXCEPTION___ */ = {
+		isa = PBXSymbolicBreakpoint;
+		actions = (
+		);
+		breakpointStyle = 1;
+		continueAfterActions = 0;
+		countType = 0;
+		delayBeforeContinue = 0;
+		hitCount = 0;
+		ignoreCount = 0;
+		location = CoreFoundation;
+		modificationTime = 242084226.565508;
+		state = 1;
+		symbolName = "___TERMINATING_DUE_TO_UNCAUGHT_EXCEPTION___";
+	};
+	BE6189A50E6DDFA30037511A /* ___TERMINATING_DUE_TO_UNCAUGHT_EXCEPTION___ */ = {
+		isa = PBXSymbolicBreakpoint;
+		actions = (
+		);
+		breakpointStyle = 1;
+		continueAfterActions = 0;
+		countType = 0;
+		delayBeforeContinue = 0;
+		hitCount = 0;
+		ignoreCount = 0;
+		location = CoreFoundation;
+		modificationTime = 242084226.565514;
+		state = 1;
+		symbolName = "___TERMINATING_DUE_TO_UNCAUGHT_EXCEPTION___";
+	};
+	BE6189A60E6DDFA40037511A /* ___TERMINATING_DUE_TO_UNCAUGHT_EXCEPTION___ */ = {
+		isa = PBXSymbolicBreakpoint;
+		actions = (
+		);
+		breakpointStyle = 1;
+		continueAfterActions = 0;
+		countType = 0;
+		delayBeforeContinue = 0;
+		hitCount = 0;
+		ignoreCount = 0;
+		location = CoreFoundation;
+		modificationTime = 242084226.565519;
+		state = 1;
+		symbolName = "___TERMINATING_DUE_TO_UNCAUGHT_EXCEPTION___";
+	};
+	BE6189A70E6DDFAF0037511A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 7790198E0C07548A00326F66 /* KappaAppDelegate.py */;
+		name = "KappaAppDelegate.py: 43";
+		rLen = 0;
+		rLoc = 1158;
+		rType = 0;
+		vrLen = 610;
+		vrLoc = 177;
+	};
+	BE6189A80E6DDFAF0037511A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 77631A3E0C0748CF005415CB /* main.py */;
+		name = "main.py: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 405;
+		vrLoc = 0;
+	};
+	BE6189A90E6DDFAF0037511A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 7790198E0C07548A00326F66 /* KappaAppDelegate.py */;
+		name = "KappaAppDelegate.py: 43";
+		rLen = 0;
+		rLoc = 1158;
+		rType = 0;
+		vrLen = 610;
+		vrLoc = 177;
+	};
+	BE6189AA0E6DDFAF0037511A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 77631A3E0C0748CF005415CB /* main.py */;
+		name = "main.py: 14";
+		rLen = 0;
+		rLoc = 240;
+		rType = 0;
+		vrLen = 457;
+		vrLoc = 0;
+	};
+	BE6189AD0E6DDFAF0037511A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 7790198E0C07548A00326F66 /* KappaAppDelegate.py */;
+		name = "KappaAppDelegate.py: 139";
+		rLen = 0;
+		rLoc = 4767;
+		rType = 0;
+		vrLen = 1560;
+		vrLoc = 4105;
+	};
+	BE6189BE0E6DDFC90037511A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 77631A3E0C0748CF005415CB /* main.py */;
+		name = "main.py: 14";
+		rLen = 0;
+		rLoc = 240;
+		rType = 0;
+		vrLen = 457;
+		vrLoc = 0;
+	};
+	BE6189BF0E6DDFC90037511A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 7790198E0C07548A00326F66 /* KappaAppDelegate.py */;
+		name = "KappaAppDelegate.py: 137";
+		rLen = 0;
+		rLoc = 4244;
+		rType = 0;
+		vrLen = 1568;
+		vrLoc = 4105;
+	};
+	BE6189C20E6DE0190037511A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 77631A3E0C0748CF005415CB /* main.py */;
+		name = "main.py: 14";
+		rLen = 0;
+		rLoc = 240;
+		rType = 0;
+		vrLen = 457;
+		vrLoc = 0;
+	};
+	BE6189C30E6DE0190037511A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 7790198E0C07548A00326F66 /* KappaAppDelegate.py */;
+		name = "KappaAppDelegate.py: 53";
+		rLen = 0;
+		rLoc = 1342;
+		rType = 0;
+		vrLen = 1285;
+		vrLoc = 590;
+	};
+	BE6189C60E6DE05B0037511A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 77631A3E0C0748CF005415CB /* main.py */;
+		name = "main.py: 14";
+		rLen = 0;
+		rLoc = 240;
+		rType = 0;
+		vrLen = 457;
+		vrLoc = 0;
+	};
+	BE6189C70E6DE05B0037511A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 7790198E0C07548A00326F66 /* KappaAppDelegate.py */;
+		name = "KappaAppDelegate.py: 142";
+		rLen = 0;
+		rLoc = 4768;
+		rType = 0;
+		vrLen = 1587;
+		vrLoc = 4105;
+	};
+	BE6189CA0E6DE08E0037511A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 77631A3E0C0748CF005415CB /* main.py */;
+		name = "main.py: 14";
+		rLen = 0;
+		rLoc = 240;
+		rType = 0;
+		vrLen = 457;
+		vrLoc = 0;
+	};
+	BE6189CB0E6DE08E0037511A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 7790198E0C07548A00326F66 /* KappaAppDelegate.py */;
+		name = "KappaAppDelegate.py: 96";
+		rLen = 0;
+		rLoc = 2799;
+		rType = 0;
+		vrLen = 1773;
+		vrLoc = 2125;
+	};
+	BE6189CE0E6DE0E20037511A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 77631A3E0C0748CF005415CB /* main.py */;
+		name = "main.py: 14";
+		rLen = 0;
+		rLoc = 240;
+		rType = 0;
+		vrLen = 457;
+		vrLoc = 0;
+	};
+	BE6189CF0E6DE0E20037511A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 7790198E0C07548A00326F66 /* KappaAppDelegate.py */;
+		name = "KappaAppDelegate.py: 117";
+		rLen = 0;
+		rLoc = 3642;
+		rType = 0;
+		vrLen = 1689;
+		vrLoc = 2311;
+	};
+	BE6189D40E6DE1360037511A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 77631A3E0C0748CF005415CB /* main.py */;
+		name = "main.py: 14";
+		rLen = 0;
+		rLoc = 240;
+		rType = 0;
+		vrLen = 457;
+		vrLoc = 0;
+	};
+	BE6189D50E6DE1360037511A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 7790198E0C07548A00326F66 /* KappaAppDelegate.py */;
+		name = "KappaAppDelegate.py: 160";
+		rLen = 0;
+		rLoc = 5391;
+		rType = 0;
+		vrLen = 1610;
+		vrLoc = 4355;
+	};
+	BE6189D80E6DE3EC0037511A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 77631A3E0C0748CF005415CB /* main.py */;
+		name = "main.py: 14";
+		rLen = 0;
+		rLoc = 240;
+		rType = 0;
+		vrLen = 457;
+		vrLoc = 0;
+	};
+	BE6189D90E6DE3EC0037511A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 7790198E0C07548A00326F66 /* KappaAppDelegate.py */;
+		name = "KappaAppDelegate.py: 10";
+		rLen = 0;
+		rLoc = 185;
+		rType = 0;
+		vrLen = 1080;
+		vrLoc = 0;
+	};
+	BE6189DB0E6DE5800037511A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 77631A3E0C0748CF005415CB /* main.py */;
+		name = "main.py: 14";
+		rLen = 0;
+		rLoc = 240;
+		rType = 0;
+		vrLen = 457;
+		vrLoc = 0;
+	};
+	BE6189DC0E6DE5800037511A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 7790198E0C07548A00326F66 /* KappaAppDelegate.py */;
+		name = "KappaAppDelegate.py: 138";
+		rLen = 0;
+		rLoc = 4767;
+		rType = 0;
+		vrLen = 1620;
+		vrLoc = 4200;
+	};
+	BE6189DE0E6DE5CD0037511A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 77631A3E0C0748CF005415CB /* main.py */;
+		name = "main.py: 14";
+		rLen = 0;
+		rLoc = 240;
+		rType = 0;
+		vrLen = 457;
+		vrLoc = 0;
+	};
+	BE6189DF0E6DE5CD0037511A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 7790198E0C07548A00326F66 /* KappaAppDelegate.py */;
+		name = "KappaAppDelegate.py: 151";
+		rLen = 0;
+		rLoc = 5125;
+		rType = 0;
+		vrLen = 1659;
+		vrLoc = 3975;
+	};
+	BE6189E20E6DE6640037511A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 77631A3E0C0748CF005415CB /* main.py */;
+		name = "main.py: 14";
+		rLen = 0;
+		rLoc = 240;
+		rType = 0;
+		vrLen = 457;
+		vrLoc = 0;
+	};
+	BE6189E30E6DE6640037511A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 7790198E0C07548A00326F66 /* KappaAppDelegate.py */;
+		name = "KappaAppDelegate.py: 151";
+		rLen = 0;
+		rLoc = 5125;
+		rType = 0;
+		vrLen = 1658;
+		vrLoc = 3975;
+	};
+	BE6189E90E6DE7220037511A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 77631A3E0C0748CF005415CB /* main.py */;
+		name = "main.py: 14";
+		rLen = 0;
+		rLoc = 240;
+		rType = 0;
+		vrLen = 457;
+		vrLoc = 0;
+	};
+	BE6189EA0E6DE7220037511A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 7790198E0C07548A00326F66 /* KappaAppDelegate.py */;
+		name = "KappaAppDelegate.py: 53";
+		rLen = 0;
+		rLoc = 1342;
+		rType = 0;
+		vrLen = 1294;
+		vrLoc = 716;
+	};
+	BE6189ED0E6DE7330037511A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 77631A3E0C0748CF005415CB /* main.py */;
+		name = "main.py: 14";
+		rLen = 0;
+		rLoc = 240;
+		rType = 0;
+		vrLen = 457;
+		vrLoc = 0;
+	};
+	BE6189EE0E6DE7330037511A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 7790198E0C07548A00326F66 /* KappaAppDelegate.py */;
+		name = "KappaAppDelegate.py: 38";
+		rLen = 0;
+		rLoc = 895;
+		rType = 0;
+		vrLen = 1294;
+		vrLoc = 716;
+	};
+	BE6189F10E6DE7620037511A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 77631A3E0C0748CF005415CB /* main.py */;
+		name = "main.py: 14";
+		rLen = 0;
+		rLoc = 240;
+		rType = 0;
+		vrLen = 457;
+		vrLoc = 0;
+	};
+	BE6189F20E6DE7620037511A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 7790198E0C07548A00326F66 /* KappaAppDelegate.py */;
+		name = "KappaAppDelegate.py: 79";
+		rLen = 0;
+		rLoc = 2148;
+		rType = 0;
+		vrLen = 1762;
+		vrLoc = 1450;
+	};
+	BE6189F40E6DE8290037511A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 77631A3E0C0748CF005415CB /* main.py */;
+		name = "main.py: 14";
+		rLen = 0;
+		rLoc = 240;
+		rType = 0;
+		vrLen = 457;
+		vrLoc = 0;
+	};
+	BE6189F50E6DE8290037511A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 7790198E0C07548A00326F66 /* KappaAppDelegate.py */;
+		name = "KappaAppDelegate.py: 132";
+		rLen = 0;
+		rLoc = 4212;
+		rType = 0;
+		vrLen = 1699;
+		vrLoc = 3181;
+	};
+	BE6189F80E6DE87D0037511A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 77631A3E0C0748CF005415CB /* main.py */;
+		name = "main.py: 14";
+		rLen = 0;
+		rLoc = 240;
+		rType = 0;
+		vrLen = 457;
+		vrLoc = 0;
+	};
+	BE6189F90E6DE87D0037511A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 7790198E0C07548A00326F66 /* KappaAppDelegate.py */;
+		name = "KappaAppDelegate.py: 134";
+		rLen = 0;
+		rLoc = 4267;
+		rType = 0;
+		vrLen = 1695;
+		vrLoc = 3361;
+	};
+	BE6189FB0E6DE88B0037511A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 77631A3E0C0748CF005415CB /* main.py */;
+		name = "main.py: 14";
+		rLen = 0;
+		rLoc = 240;
+		rType = 0;
+		vrLen = 457;
+		vrLoc = 0;
+	};
+	BE6189FC0E6DE88B0037511A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 7790198E0C07548A00326F66 /* KappaAppDelegate.py */;
+		name = "KappaAppDelegate.py: 134";
+		rLen = 0;
+		rLoc = 4267;
+		rType = 0;
+		vrLen = 1728;
+		vrLoc = 3361;
+	};
+	BE618A000E6DE91B0037511A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 77631A3E0C0748CF005415CB /* main.py */;
+		name = "main.py: 14";
+		rLen = 0;
+		rLoc = 240;
+		rType = 0;
+		vrLen = 457;
+		vrLoc = 0;
+	};
+	BE618A010E6DE91B0037511A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 7790198E0C07548A00326F66 /* KappaAppDelegate.py */;
+		name = "KappaAppDelegate.py: 132";
+		rLen = 0;
+		rLoc = 4244;
+		rType = 0;
+		vrLen = 1612;
+		vrLoc = 3361;
+	};
+	BE618A020E6DE9260037511A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 77631A3E0C0748CF005415CB /* main.py */;
+		name = "main.py: 14";
+		rLen = 0;
+		rLoc = 240;
+		rType = 0;
+		vrLen = 457;
+		vrLoc = 0;
+	};
+	BE618A030E6DE9260037511A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 7790198E0C07548A00326F66 /* KappaAppDelegate.py */;
+		name = "KappaAppDelegate.py: 137";
+		rLen = 0;
+		rLoc = 4597;
+		rType = 0;
+		vrLen = 1606;
+		vrLoc = 3361;
+	};
+	BE618A060E6DE93E0037511A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 77631A3E0C0748CF005415CB /* main.py */;
+		name = "main.py: 14";
+		rLen = 0;
+		rLoc = 240;
+		rType = 0;
+		vrLen = 457;
+		vrLoc = 0;
+	};
+	BE618A070E6DE93E0037511A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 7790198E0C07548A00326F66 /* KappaAppDelegate.py */;
+		name = "KappaAppDelegate.py: 137";
+		rLen = 0;
+		rLoc = 4597;
+		rType = 0;
+		vrLen = 1615;
+		vrLoc = 3361;
+	};
+	BE618A0A0E6DE95F0037511A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 77631A3E0C0748CF005415CB /* main.py */;
+		name = "main.py: 14";
+		rLen = 0;
+		rLoc = 240;
+		rType = 0;
+		vrLen = 457;
+		vrLoc = 0;
+	};
+	BE618A0B0E6DE95F0037511A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 7790198E0C07548A00326F66 /* KappaAppDelegate.py */;
+		name = "KappaAppDelegate.py: 133";
+		rLen = 0;
+		rLoc = 4244;
+		rType = 0;
+		vrLen = 1623;
+		vrLoc = 3361;
+	};
+	BE618A0E0E6DE9820037511A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 77631A3E0C0748CF005415CB /* main.py */;
+		name = "main.py: 14";
+		rLen = 0;
+		rLoc = 240;
+		rType = 0;
+		vrLen = 457;
+		vrLoc = 0;
+	};
+	BE618A0F0E6DE9820037511A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 7790198E0C07548A00326F66 /* KappaAppDelegate.py */;
+		name = "KappaAppDelegate.py: 132";
+		rLen = 0;
+		rLoc = 4244;
+		rType = 0;
+		vrLen = 1610;
+		vrLoc = 3361;
+	};
+	BE618A120E6DE9BF0037511A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 77631A3E0C0748CF005415CB /* main.py */;
+		name = "main.py: 14";
+		rLen = 0;
+		rLoc = 240;
+		rType = 0;
+		vrLen = 457;
+		vrLoc = 0;
+	};
+	BE618A130E6DE9BF0037511A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 7790198E0C07548A00326F66 /* KappaAppDelegate.py */;
+		name = "KappaAppDelegate.py: 137";
+		rLen = 0;
+		rLoc = 4569;
+		rType = 0;
+		vrLen = 1661;
+		vrLoc = 3361;
 	};
 }
