@@ -66,6 +66,14 @@ class KappaAppDelegate(NSObject):
                 'password':'',
             }
             self.prefs = NSMutableDictionary.dictionaryWithDictionary_(defaults)
+            
+    def restoreTweets(self):
+        try:
+            fin = open(self.pathForFile("twits.serialized"),'r')
+            self.twits = pickle.load(fin)
+            fin.close()
+        except IOError:
+            self.twits = []
         
     def storePreferences(self):
         newDict = {}
@@ -74,6 +82,11 @@ class KappaAppDelegate(NSObject):
     
         fout = open(self.pathForFile(USER_PREFS_FILE),'w')
         pickle.dump(newDict,fout)
+        fout.close()
+        
+    def storeTweets(self):
+        fout = open(self.pathForFile("twits.serialized"),'w')
+        pickle.dump(self.twits,fout)
         fout.close()
         
     def incrementProgressIndicator(self):
@@ -132,7 +145,7 @@ class KappaAppDelegate(NSObject):
         def convertTwit(tweet):
             objcDict = {} #NSMutableDictionary.alloc().init()
             objcDict['time'] = self.kappaTime(datetime.datetime.utcfromtimestamp(tweet.created_at_in_seconds))
-            objcDict['user'] = tweet.user
+            objcDict['user'] = tweet.user.screen_name
             objcDict['text'] = tweet.text
             return NSDictionary.dictionaryWithDictionary_(objcDict)
             return objcDict
@@ -185,9 +198,11 @@ class KappaAppDelegate(NSObject):
     
     def awakeFromNib(self):
         self.restorePreferences()
+        self.restoreTweets()
                             
     def applicationWillTerminate_(self,sender):
         self.storePreferences()
+        self.storeTweets()
     
     def applicationDidFinishLaunching_(self, sender):
         if self.login():

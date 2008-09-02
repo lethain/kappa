@@ -8,7 +8,7 @@
 		<string key="IBDocument.HIToolboxVersion">352.00</string>
 		<object class="NSMutableArray" key="IBDocument.EditedObjectIDs">
 			<bool key="EncodedWithXMLCoder">YES</bool>
-			<integer value="399"/>
+			<integer value="372"/>
 			<integer value="407"/>
 		</object>
 		<object class="NSArray" key="IBDocument.PluginDependencies">
@@ -901,7 +901,6 @@
 													</object>
 													<int key="NSResizingMask">3</int>
 													<bool key="NSIsResizeable">YES</bool>
-													<bool key="NSIsEditable">YES</bool>
 													<reference key="NSTableView" ref="800466935"/>
 												</object>
 												<object class="NSTableColumn" id="619233383">
@@ -935,7 +934,6 @@
 													</object>
 													<int key="NSResizingMask">3</int>
 													<bool key="NSIsResizeable">YES</bool>
-													<bool key="NSIsEditable">YES</bool>
 													<reference key="NSTableView" ref="800466935"/>
 												</object>
 												<object class="NSTableColumn" id="583387791">
@@ -951,8 +949,8 @@
 														<reference key="NSTextColor" ref="469847157"/>
 													</object>
 													<object class="NSTextFieldCell" key="NSDataCell" id="593486392">
-														<int key="NSCellFlags">337772096</int>
-														<int key="NSCellFlags2">2048</int>
+														<int key="NSCellFlags">337772032</int>
+														<int key="NSCellFlags2">0</int>
 														<string key="NSContents">Text Cell</string>
 														<reference key="NSSupport" ref="521538870"/>
 														<reference key="NSControlView" ref="800466935"/>
@@ -961,7 +959,6 @@
 													</object>
 													<int key="NSResizingMask">3</int>
 													<bool key="NSIsResizeable">YES</bool>
-													<bool key="NSIsEditable">YES</bool>
 													<reference key="NSTableView" ref="800466935"/>
 												</object>
 											</object>
@@ -977,7 +974,7 @@
 													<bytes key="NSWhite">MC41AA</bytes>
 												</object>
 											</object>
-											<double key="NSRowHeight">1.700000e+01</double>
+											<double key="NSRowHeight">5.000000e+01</double>
 											<int key="NSTvFlags">-759169024</int>
 											<int key="NSColumnAutoresizingStyle">4</int>
 											<int key="NSDraggingSourceMaskForLocal">15</int>
@@ -1005,7 +1002,7 @@
 								<object class="NSScroller" id="339699187">
 									<reference key="NSNextResponder" ref="611769196"/>
 									<int key="NSvFlags">-2147483392</int>
-									<string key="NSFrame">{{1, 321}, {463, 15}}</string>
+									<string key="NSFrame">{{-100, -100}, {463, 15}}</string>
 									<reference key="NSSuperview" ref="611769196"/>
 									<int key="NSsFlags">1</int>
 									<reference key="NSTarget" ref="611769196"/>
@@ -1031,13 +1028,13 @@
 							<string key="NSFrame">{{-1, -1}, {482, 341}}</string>
 							<reference key="NSSuperview" ref="439893737"/>
 							<reference key="NSNextKeyView" ref="43645352"/>
-							<int key="NSsFlags">562</int>
+							<int key="NSsFlags">530</int>
 							<reference key="NSVScroller" ref="721497720"/>
 							<reference key="NSHScroller" ref="339699187"/>
 							<reference key="NSContentView" ref="43645352"/>
 							<reference key="NSHeaderClipView" ref="1040034964"/>
 							<reference key="NSCornerView" ref="177988204"/>
-							<bytes key="NSScrollAmts">QSAAAEEgAABBmAAAQZgAAA</bytes>
+							<bytes key="NSScrollAmts">QSAAAEEgAABCUAAAQlAAAA</bytes>
 						</object>
 					</object>
 					<string key="NSFrameSize">{480, 360}</string>
@@ -3133,9 +3130,9 @@
 					<reference ref="9"/>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<reference ref="9"/>
-					<string>{{59, 117}, {480, 360}}</string>
+					<string>{{69, 194}, {480, 360}}</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
-					<string>{{59, 117}, {480, 360}}</string>
+					<string>{{69, 194}, {480, 360}}</string>
 					<reference ref="9"/>
 					<string>{{238, 285}, {480, 360}}</string>
 					<reference ref="9"/>
