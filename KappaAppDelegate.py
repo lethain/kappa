@@ -157,7 +157,7 @@ class KappaAppDelegate(NSObject):
         NSLog(u"mainFrame: %s" % mainFrame)
         screen = self.mainWindow.screen()
         
-        frameRect = NSMakeRect(mainFrame.origin.x,mainFrame.origin.y-50, mainFrame.size.width, 50)
+        frameRect = NSMakeRect(mainFrame.origin.x,mainFrame.origin.y-40, mainFrame.size.width, 40)
         self.inputWindow.setFrame_display_(frameRect, True)
         
     
