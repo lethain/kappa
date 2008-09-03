@@ -255,8 +255,14 @@ class KappaAppDelegate(NSObject):
     @objc.IBAction
     def search_(self, searchField):
         searchStr = searchField.stringValue()
-        
-    
+        NSLog(u"searchField: %s" % searchField)
+        try:
+            SEARCH_RE = re.compile(searchStr)
+            
+            searchField.setTextColor_(NSColor.blackColor())
+        except re.error:
+            searchField.setTextColor_(NSColor.redColor())
+            NSLog(u"Kappa: '%s' is not a valid regular expression." % searchStr)
         
     ''' Accessors and mutators '''
     
