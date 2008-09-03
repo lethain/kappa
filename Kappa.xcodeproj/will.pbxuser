@@ -195,6 +195,19 @@
 			BE618B550E6E290D0037511A /* PBXTextBookmark */ = BE618B550E6E290D0037511A /* PBXTextBookmark */;
 			BE618B570E6E29AA0037511A /* PBXTextBookmark */ = BE618B570E6E29AA0037511A /* PBXTextBookmark */;
 			BE618B580E6E29AA0037511A /* PBXTextBookmark */ = BE618B580E6E29AA0037511A /* PBXTextBookmark */;
+			BE618B5C0E6E2B750037511A /* PBXTextBookmark */ = BE618B5C0E6E2B750037511A /* PBXTextBookmark */;
+			BE618B5D0E6E2B750037511A /* PBXTextBookmark */ = BE618B5D0E6E2B750037511A /* PBXTextBookmark */;
+			BE618B5E0E6E2CE00037511A /* PBXTextBookmark */ = BE618B5E0E6E2CE00037511A /* PBXTextBookmark */;
+			BE618B5F0E6E2CE00037511A /* PBXTextBookmark */ = BE618B5F0E6E2CE00037511A /* PBXTextBookmark */;
+			BE618B610E6E2D240037511A /* PBXTextBookmark */ = BE618B610E6E2D240037511A /* PBXTextBookmark */;
+			BE618B620E6E2D240037511A /* PBXTextBookmark */ = BE618B620E6E2D240037511A /* PBXTextBookmark */;
+			BE618B640E6EAA4B0037511A /* PBXTextBookmark */ = BE618B640E6EAA4B0037511A /* PBXTextBookmark */;
+			BE618B650E6EAA4B0037511A /* PBXTextBookmark */ = BE618B650E6EAA4B0037511A /* PBXTextBookmark */;
+			BE618B6C0E6EAAAC0037511A /* PBXTextBookmark */ = BE618B6C0E6EAAAC0037511A /* PBXTextBookmark */;
+			BE618B6D0E6EAAAC0037511A /* PBXBookmark */ = BE618B6D0E6EAAAC0037511A /* PBXBookmark */;
+			BE618B6E0E6EAAAC0037511A /* PBXTextBookmark */ = BE618B6E0E6EAAAC0037511A /* PBXTextBookmark */;
+			BE618B6F0E6EAAAC0037511A /* PBXTextBookmark */ = BE618B6F0E6EAAAC0037511A /* PBXTextBookmark */;
+			BE618B700E6EAAAC0037511A /* PBXTextBookmark */ = BE618B700E6EAAAC0037511A /* PBXTextBookmark */;
 		};
 		sourceControlManager = BE6188880E6CBC370037511A /* Source Control */;
 		userBuildSettings = {
@@ -209,9 +222,9 @@
 	};
 	7790198E0C07548A00326F66 /* KappaAppDelegate.py */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {724, 4046}}";
-			sepNavSelRange = "{8822, 0}";
-			sepNavVisRange = "{8348, 1450}";
+			sepNavIntBoundsRect = "{{0, 0}, {724, 3920}}";
+			sepNavSelRange = "{4859, 0}";
+			sepNavVisRange = "{3842, 1922}";
 		};
 	};
 	8D1107260486CEB800E47090 /* Kappa */ = {
@@ -398,7 +411,7 @@
 		fRef = 7790198E0C07548A00326F66 /* KappaAppDelegate.py */;
 		name = "KappaAppDelegate.py: 139";
 		rLen = 0;
-		rLoc = 4923;
+		rLoc = 4911;
 		rType = 0;
 		vrLen = 1560;
 		vrLoc = 4105;
@@ -418,7 +431,7 @@
 		fRef = 7790198E0C07548A00326F66 /* KappaAppDelegate.py */;
 		name = "KappaAppDelegate.py: 137";
 		rLen = 0;
-		rLoc = 4547;
+		rLoc = 4511;
 		rType = 0;
 		vrLen = 1568;
 		vrLoc = 4105;
@@ -458,7 +471,7 @@
 		fRef = 7790198E0C07548A00326F66 /* KappaAppDelegate.py */;
 		name = "KappaAppDelegate.py: 142";
 		rLen = 0;
-		rLoc = 4924;
+		rLoc = 4912;
 		rType = 0;
 		vrLen = 1587;
 		vrLoc = 4105;
@@ -518,7 +531,7 @@
 		fRef = 7790198E0C07548A00326F66 /* KappaAppDelegate.py */;
 		name = "KappaAppDelegate.py: 160";
 		rLen = 0;
-		rLoc = 5785;
+		rLoc = 5592;
 		rType = 0;
 		vrLen = 1610;
 		vrLoc = 4355;
@@ -558,7 +571,7 @@
 		fRef = 7790198E0C07548A00326F66 /* KappaAppDelegate.py */;
 		name = "KappaAppDelegate.py: 138";
 		rLen = 0;
-		rLoc = 4923;
+		rLoc = 4911;
 		rType = 0;
 		vrLen = 1620;
 		vrLoc = 4200;
@@ -578,7 +591,7 @@
 		fRef = 7790198E0C07548A00326F66 /* KappaAppDelegate.py */;
 		name = "KappaAppDelegate.py: 151";
 		rLen = 0;
-		rLoc = 5611;
+		rLoc = 5461;
 		rType = 0;
 		vrLen = 1659;
 		vrLoc = 3975;
@@ -598,7 +611,7 @@
 		fRef = 7790198E0C07548A00326F66 /* KappaAppDelegate.py */;
 		name = "KappaAppDelegate.py: 151";
 		rLen = 0;
-		rLoc = 5611;
+		rLoc = 5461;
 		rType = 0;
 		vrLen = 1658;
 		vrLoc = 3975;
@@ -678,7 +691,7 @@
 		fRef = 7790198E0C07548A00326F66 /* KappaAppDelegate.py */;
 		name = "KappaAppDelegate.py: 132";
 		rLen = 0;
-		rLoc = 4515;
+		rLoc = 4479;
 		rType = 0;
 		vrLen = 1699;
 		vrLoc = 3181;
@@ -698,7 +711,7 @@
 		fRef = 7790198E0C07548A00326F66 /* KappaAppDelegate.py */;
 		name = "KappaAppDelegate.py: 134";
 		rLen = 0;
-		rLoc = 4570;
+		rLoc = 4534;
 		rType = 0;
 		vrLen = 1695;
 		vrLoc = 3361;
@@ -718,7 +731,7 @@
 		fRef = 7790198E0C07548A00326F66 /* KappaAppDelegate.py */;
 		name = "KappaAppDelegate.py: 134";
 		rLen = 0;
-		rLoc = 4570;
+		rLoc = 4534;
 		rType = 0;
 		vrLen = 1728;
 		vrLoc = 3361;
@@ -738,7 +751,7 @@
 		fRef = 7790198E0C07548A00326F66 /* KappaAppDelegate.py */;
 		name = "KappaAppDelegate.py: 132";
 		rLen = 0;
-		rLoc = 4547;
+		rLoc = 4511;
 		rType = 0;
 		vrLen = 1612;
 		vrLoc = 3361;
@@ -758,7 +771,7 @@
 		fRef = 7790198E0C07548A00326F66 /* KappaAppDelegate.py */;
 		name = "KappaAppDelegate.py: 137";
 		rLen = 0;
-		rLoc = 4863;
+		rLoc = 4799;
 		rType = 0;
 		vrLen = 1606;
 		vrLoc = 3361;
@@ -778,7 +791,7 @@
 		fRef = 7790198E0C07548A00326F66 /* KappaAppDelegate.py */;
 		name = "KappaAppDelegate.py: 137";
 		rLen = 0;
-		rLoc = 4863;
+		rLoc = 4799;
 		rType = 0;
 		vrLen = 1615;
 		vrLoc = 3361;
@@ -798,7 +811,7 @@
 		fRef = 7790198E0C07548A00326F66 /* KappaAppDelegate.py */;
 		name = "KappaAppDelegate.py: 133";
 		rLen = 0;
-		rLoc = 4547;
+		rLoc = 4511;
 		rType = 0;
 		vrLen = 1623;
 		vrLoc = 3361;
@@ -818,7 +831,7 @@
 		fRef = 7790198E0C07548A00326F66 /* KappaAppDelegate.py */;
 		name = "KappaAppDelegate.py: 132";
 		rLen = 0;
-		rLoc = 4547;
+		rLoc = 4511;
 		rType = 0;
 		vrLen = 1610;
 		vrLoc = 3361;
@@ -838,7 +851,7 @@
 		fRef = 7790198E0C07548A00326F66 /* KappaAppDelegate.py */;
 		name = "KappaAppDelegate.py: 137";
 		rLen = 0;
-		rLoc = 4835;
+		rLoc = 4799;
 		rType = 0;
 		vrLen = 1661;
 		vrLoc = 3361;
@@ -868,7 +881,7 @@
 		fRef = 7790198E0C07548A00326F66 /* KappaAppDelegate.py */;
 		name = "KappaAppDelegate.py: 135";
 		rLen = 0;
-		rLoc = 4725;
+		rLoc = 4689;
 		rType = 0;
 		vrLen = 899;
 		vrLoc = 4123;
@@ -878,7 +891,7 @@
 		fRef = 7790198E0C07548A00326F66 /* KappaAppDelegate.py */;
 		name = "KappaAppDelegate.py: 135";
 		rLen = 0;
-		rLoc = 4725;
+		rLoc = 4689;
 		rType = 0;
 		vrLen = 853;
 		vrLoc = 4123;
@@ -888,7 +901,7 @@
 		fRef = 7790198E0C07548A00326F66 /* KappaAppDelegate.py */;
 		name = "KappaAppDelegate.py: 192";
 		rLen = 0;
-		rLoc = 6990;
+		rLoc = 6733;
 		rType = 0;
 		vrLen = 511;
 		vrLoc = 0;
@@ -928,7 +941,7 @@
 		fRef = 7790198E0C07548A00326F66 /* KappaAppDelegate.py */;
 		name = "KappaAppDelegate.py: 137";
 		rLen = 0;
-		rLoc = 3781;
+		rLoc = 3745;
 		rType = 0;
 		vrLen = 823;
 		vrLoc = 4062;
@@ -938,7 +951,7 @@
 		fRef = 7790198E0C07548A00326F66 /* KappaAppDelegate.py */;
 		name = "KappaAppDelegate.py: 146";
 		rLen = 0;
-		rLoc = 4153;
+		rLoc = 4117;
 		rType = 0;
 		vrLen = 876;
 		vrLoc = 4102;
@@ -948,7 +961,7 @@
 		fRef = 7790198E0C07548A00326F66 /* KappaAppDelegate.py */;
 		name = "KappaAppDelegate.py: 144";
 		rLen = 0;
-		rLoc = 4395;
+		rLoc = 4359;
 		rType = 0;
 		vrLen = 800;
 		vrLoc = 4186;
@@ -958,7 +971,7 @@
 		fRef = 7790198E0C07548A00326F66 /* KappaAppDelegate.py */;
 		name = "KappaAppDelegate.py: 144";
 		rLen = 0;
-		rLoc = 4163;
+		rLoc = 4127;
 		rType = 0;
 		vrLen = 872;
 		vrLoc = 4258;
@@ -968,7 +981,7 @@
 		fRef = 7790198E0C07548A00326F66 /* KappaAppDelegate.py */;
 		name = "KappaAppDelegate.py: 144";
 		rLen = 0;
-		rLoc = 4172;
+		rLoc = 4136;
 		rType = 0;
 		vrLen = 875;
 		vrLoc = 4258;
@@ -978,7 +991,7 @@
 		fRef = 7790198E0C07548A00326F66 /* KappaAppDelegate.py */;
 		name = "KappaAppDelegate.py: 143";
 		rLen = 0;
-		rLoc = 4095;
+		rLoc = 4059;
 		rType = 0;
 		vrLen = 896;
 		vrLoc = 4258;
@@ -988,7 +1001,7 @@
 		fRef = 7790198E0C07548A00326F66 /* KappaAppDelegate.py */;
 		name = "KappaAppDelegate.py: 207";
 		rLen = 0;
-		rLoc = 6813;
+		rLoc = 6556;
 		rType = 0;
 		vrLen = 736;
 		vrLoc = 6336;
@@ -998,7 +1011,7 @@
 		fRef = 7790198E0C07548A00326F66 /* KappaAppDelegate.py */;
 		name = "KappaAppDelegate.py: 207";
 		rLen = 0;
-		rLoc = 6808;
+		rLoc = 6551;
 		rType = 0;
 		vrLen = 736;
 		vrLoc = 6336;
@@ -1008,7 +1021,7 @@
 		fRef = 7790198E0C07548A00326F66 /* KappaAppDelegate.py */;
 		name = "KappaAppDelegate.py: 206";
 		rLen = 0;
-		rLoc = 6693;
+		rLoc = 6436;
 		rType = 0;
 		vrLen = 690;
 		vrLoc = 6620;
@@ -1028,7 +1041,7 @@
 		fRef = 7790198E0C07548A00326F66 /* KappaAppDelegate.py */;
 		name = "KappaAppDelegate.py: 147";
 		rLen = 0;
-		rLoc = 4395;
+		rLoc = 4359;
 		rType = 0;
 		vrLen = 956;
 		vrLoc = 4363;
@@ -1038,7 +1051,7 @@
 		fRef = 7790198E0C07548A00326F66 /* KappaAppDelegate.py */;
 		name = "KappaAppDelegate.py: 147";
 		rLen = 0;
-		rLoc = 4245;
+		rLoc = 4209;
 		rType = 0;
 		vrLen = 953;
 		vrLoc = 4363;
@@ -1048,7 +1061,7 @@
 		fRef = 7790198E0C07548A00326F66 /* KappaAppDelegate.py */;
 		name = "KappaAppDelegate.py: 147";
 		rLen = 0;
-		rLoc = 4395;
+		rLoc = 4359;
 		rType = 0;
 		vrLen = 965;
 		vrLoc = 4363;
@@ -1088,7 +1101,7 @@
 		fRef = 7790198E0C07548A00326F66 /* KappaAppDelegate.py */;
 		name = "KappaAppDelegate.py: 147";
 		rLen = 0;
-		rLoc = 4291;
+		rLoc = 4255;
 		rType = 0;
 		vrLen = 929;
 		vrLoc = 4305;
@@ -1098,7 +1111,7 @@
 		fRef = 7790198E0C07548A00326F66 /* KappaAppDelegate.py */;
 		name = "KappaAppDelegate.py: 149";
 		rLen = 0;
-		rLoc = 4515;
+		rLoc = 4479;
 		rType = 0;
 		vrLen = 1025;
 		vrLoc = 4305;
@@ -1108,7 +1121,7 @@
 		fRef = 7790198E0C07548A00326F66 /* KappaAppDelegate.py */;
 		name = "KappaAppDelegate.py: 192";
 		rLen = 0;
-		rLoc = 6265;
+		rLoc = 6008;
 		rType = 0;
 		vrLen = 808;
 		vrLoc = 5951;
@@ -1118,7 +1131,7 @@
 		fRef = 7790198E0C07548A00326F66 /* KappaAppDelegate.py */;
 		name = "KappaAppDelegate.py: 186";
 		rLen = 0;
-		rLoc = 6089;
+		rLoc = 5832;
 		rType = 0;
 		vrLen = 763;
 		vrLoc = 5951;
@@ -1128,7 +1141,7 @@
 		fRef = 7790198E0C07548A00326F66 /* KappaAppDelegate.py */;
 		name = "KappaAppDelegate.py: 185";
 		rLen = 0;
-		rLoc = 5983;
+		rLoc = 5726;
 		rType = 0;
 		vrLen = 706;
 		vrLoc = 6014;
@@ -1138,7 +1151,7 @@
 		fRef = 7790198E0C07548A00326F66 /* KappaAppDelegate.py */;
 		name = "KappaAppDelegate.py: 167";
 		rLen = 0;
-		rLoc = 5429;
+		rLoc = 5309;
 		rType = 0;
 		vrLen = 806;
 		vrLoc = 5331;
@@ -1148,7 +1161,7 @@
 		fRef = 7790198E0C07548A00326F66 /* KappaAppDelegate.py */;
 		name = "KappaAppDelegate.py: 169";
 		rLen = 0;
-		rLoc = 5271;
+		rLoc = 5203;
 		rType = 0;
 		vrLen = 872;
 		vrLoc = 5147;
@@ -1158,7 +1171,7 @@
 		fRef = 7790198E0C07548A00326F66 /* KappaAppDelegate.py */;
 		name = "KappaAppDelegate.py: 168";
 		rLen = 0;
-		rLoc = 5122;
+		rLoc = 5110;
 		rType = 0;
 		vrLen = 872;
 		vrLoc = 5147;
@@ -1168,7 +1181,7 @@
 		fRef = 7790198E0C07548A00326F66 /* KappaAppDelegate.py */;
 		name = "KappaAppDelegate.py: 173";
 		rLen = 0;
-		rLoc = 5381;
+		rLoc = 5261;
 		rType = 0;
 		vrLen = 847;
 		vrLoc = 5267;
@@ -1178,7 +1191,7 @@
 		fRef = 7790198E0C07548A00326F66 /* KappaAppDelegate.py */;
 		name = "KappaAppDelegate.py: 176";
 		rLen = 0;
-		rLoc = 5498;
+		rLoc = 5378;
 		rType = 0;
 		vrLen = 856;
 		vrLoc = 5479;
@@ -1188,7 +1201,7 @@
 		fRef = 7790198E0C07548A00326F66 /* KappaAppDelegate.py */;
 		name = "KappaAppDelegate.py: 200";
 		rLen = 0;
-		rLoc = 6272;
+		rLoc = 6015;
 		rType = 0;
 		vrLen = 706;
 		vrLoc = 6416;
@@ -1198,7 +1211,7 @@
 		fRef = 7790198E0C07548A00326F66 /* KappaAppDelegate.py */;
 		name = "KappaAppDelegate.py: 190";
 		rLen = 0;
-		rLoc = 5983;
+		rLoc = 5726;
 		rType = 0;
 		vrLen = 839;
 		vrLoc = 7200;
@@ -1208,7 +1221,7 @@
 		fRef = 7790198E0C07548A00326F66 /* KappaAppDelegate.py */;
 		name = "KappaAppDelegate.py: 154";
 		rLen = 0;
-		rLoc = 4671;
+		rLoc = 4635;
 		rType = 0;
 		vrLen = 979;
 		vrLoc = 4648;
@@ -1218,7 +1231,7 @@
 		fRef = 7790198E0C07548A00326F66 /* KappaAppDelegate.py */;
 		name = "KappaAppDelegate.py: 159";
 		rLen = 0;
-		rLoc = 4923;
+		rLoc = 4911;
 		rType = 0;
 		vrLen = 1044;
 		vrLoc = 4815;
@@ -1228,7 +1241,7 @@
 		fRef = 7790198E0C07548A00326F66 /* KappaAppDelegate.py */;
 		name = "KappaAppDelegate.py: 175";
 		rLen = 0;
-		rLoc = 5525;
+		rLoc = 5405;
 		rType = 0;
 		vrLen = 970;
 		vrLoc = 5616;
@@ -1238,7 +1251,7 @@
 		fRef = 7790198E0C07548A00326F66 /* KappaAppDelegate.py */;
 		name = "KappaAppDelegate.py: 175";
 		rLen = 0;
-		rLoc = 5525;
+		rLoc = 5405;
 		rType = 0;
 		vrLen = 906;
 		vrLoc = 5616;
@@ -1248,7 +1261,7 @@
 		fRef = 7790198E0C07548A00326F66 /* KappaAppDelegate.py */;
 		name = "KappaAppDelegate.py: 267";
 		rLen = 0;
-		rLoc = 9516;
+		rLoc = 9259;
 		rType = 0;
 		vrLen = 768;
 		vrLoc = 8599;
@@ -1258,7 +1271,7 @@
 		fRef = 7790198E0C07548A00326F66 /* KappaAppDelegate.py */;
 		name = "KappaAppDelegate.py: 267";
 		rLen = 0;
-		rLoc = 9516;
+		rLoc = 9259;
 		rType = 0;
 		vrLen = 830;
 		vrLoc = 8599;
@@ -1268,7 +1281,7 @@
 		fRef = 7790198E0C07548A00326F66 /* KappaAppDelegate.py */;
 		name = "KappaAppDelegate.py: 267";
 		rLen = 0;
-		rLoc = 9516;
+		rLoc = 9259;
 		rType = 0;
 		vrLen = 768;
 		vrLoc = 8599;
@@ -1278,7 +1291,7 @@
 		fRef = 7790198E0C07548A00326F66 /* KappaAppDelegate.py */;
 		name = "KappaAppDelegate.py: 266";
 		rLen = 0;
-		rLoc = 8674;
+		rLoc = 8417;
 		rType = 0;
 		vrLen = 831;
 		vrLoc = 8599;
@@ -1288,7 +1301,7 @@
 		fRef = 7790198E0C07548A00326F66 /* KappaAppDelegate.py */;
 		name = "KappaAppDelegate.py: 267";
 		rLen = 0;
-		rLoc = 9516;
+		rLoc = 9259;
 		rType = 0;
 		vrLen = 679;
 		vrLoc = 8806;
@@ -1302,7 +1315,7 @@
 		fRef = 7790198E0C07548A00326F66 /* KappaAppDelegate.py */;
 		name = "KappaAppDelegate.py: 268";
 		rLen = 0;
-		rLoc = 8634;
+		rLoc = 8377;
 		rType = 0;
 		vrLen = 809;
 		vrLoc = 8552;
@@ -1312,7 +1325,7 @@
 		fRef = 7790198E0C07548A00326F66 /* KappaAppDelegate.py */;
 		name = "KappaAppDelegate.py: 163";
 		rLen = 0;
-		rLoc = 4923;
+		rLoc = 4911;
 		rType = 0;
 		vrLen = 1933;
 		vrLoc = 4396;
@@ -1322,7 +1335,7 @@
 		fRef = 7790198E0C07548A00326F66 /* KappaAppDelegate.py */;
 		name = "KappaAppDelegate.py: 253";
 		rLen = 0;
-		rLoc = 8634;
+		rLoc = 8377;
 		rType = 0;
 		vrLen = 531;
 		vrLoc = 8416;
@@ -1342,7 +1355,7 @@
 		fRef = 7790198E0C07548A00326F66 /* KappaAppDelegate.py */;
 		name = "KappaAppDelegate.py: 254";
 		rLen = 0;
-		rLoc = 8634;
+		rLoc = 8377;
 		rType = 0;
 		vrLen = 614;
 		vrLoc = 8330;
@@ -1352,7 +1365,7 @@
 		fRef = 7790198E0C07548A00326F66 /* KappaAppDelegate.py */;
 		name = "KappaAppDelegate.py: 146";
 		rLen = 0;
-		rLoc = 4767;
+		rLoc = 4731;
 		rType = 0;
 		vrLen = 1986;
 		vrLoc = 3613;
@@ -1362,7 +1375,7 @@
 		fRef = 7790198E0C07548A00326F66 /* KappaAppDelegate.py */;
 		name = "KappaAppDelegate.py: 255";
 		rLen = 0;
-		rLoc = 8634;
+		rLoc = 8377;
 		rType = 0;
 		vrLen = 545;
 		vrLoc = 8449;
@@ -1372,7 +1385,7 @@
 		fRef = 7790198E0C07548A00326F66 /* KappaAppDelegate.py */;
 		name = "KappaAppDelegate.py: 142";
 		rLen = 0;
-		rLoc = 4547;
+		rLoc = 4511;
 		rType = 0;
 		vrLen = 1870;
 		vrLoc = 3613;
@@ -1382,7 +1395,7 @@
 		fRef = 7790198E0C07548A00326F66 /* KappaAppDelegate.py */;
 		name = "KappaAppDelegate.py: 256";
 		rLen = 0;
-		rLoc = 8634;
+		rLoc = 8377;
 		rType = 0;
 		vrLen = 582;
 		vrLoc = 8448;
@@ -1392,7 +1405,7 @@
 		fRef = 7790198E0C07548A00326F66 /* KappaAppDelegate.py */;
 		name = "KappaAppDelegate.py: 148";
 		rLen = 0;
-		rLoc = 4767;
+		rLoc = 4731;
 		rType = 0;
 		vrLen = 1886;
 		vrLoc = 3613;
@@ -1402,7 +1415,7 @@
 		fRef = 7790198E0C07548A00326F66 /* KappaAppDelegate.py */;
 		name = "KappaAppDelegate.py: 254";
 		rLen = 0;
-		rLoc = 8634;
+		rLoc = 8377;
 		rType = 0;
 		vrLen = 516;
 		vrLoc = 8495;
@@ -1412,7 +1425,7 @@
 		fRef = 7790198E0C07548A00326F66 /* KappaAppDelegate.py */;
 		name = "KappaAppDelegate.py: 141";
 		rLen = 0;
-		rLoc = 4547;
+		rLoc = 4511;
 		rType = 0;
 		vrLen = 1868;
 		vrLoc = 3613;
@@ -1422,7 +1435,7 @@
 		fRef = 7790198E0C07548A00326F66 /* KappaAppDelegate.py */;
 		name = "KappaAppDelegate.py: 253";
 		rLen = 0;
-		rLoc = 8634;
+		rLoc = 8377;
 		rType = 0;
 		vrLen = 545;
 		vrLoc = 8453;
@@ -1432,7 +1445,7 @@
 		fRef = 7790198E0C07548A00326F66 /* KappaAppDelegate.py */;
 		name = "KappaAppDelegate.py: 258";
 		rLen = 0;
-		rLoc = 9516;
+		rLoc = 9259;
 		rType = 0;
 		vrLen = 1262;
 		vrLoc = 8059;
@@ -1442,7 +1455,7 @@
 		fRef = 7790198E0C07548A00326F66 /* KappaAppDelegate.py */;
 		name = "KappaAppDelegate.py: 253";
 		rLen = 0;
-		rLoc = 8634;
+		rLoc = 8377;
 		rType = 0;
 		vrLen = 587;
 		vrLoc = 8453;
@@ -1452,7 +1465,7 @@
 		fRef = 7790198E0C07548A00326F66 /* KappaAppDelegate.py */;
 		name = "KappaAppDelegate.py: 259";
 		rLen = 0;
-		rLoc = 8909;
+		rLoc = 8652;
 		rType = 0;
 		vrLen = 1317;
 		vrLoc = 7992;
@@ -1462,7 +1475,7 @@
 		fRef = 7790198E0C07548A00326F66 /* KappaAppDelegate.py */;
 		name = "KappaAppDelegate.py: 253";
 		rLen = 0;
-		rLoc = 8634;
+		rLoc = 8377;
 		rType = 0;
 		vrLen = 640;
 		vrLoc = 8453;
@@ -1472,7 +1485,7 @@
 		fRef = 7790198E0C07548A00326F66 /* KappaAppDelegate.py */;
 		name = "KappaAppDelegate.py: 263";
 		rLen = 0;
-		rLoc = 9516;
+		rLoc = 9259;
 		rType = 0;
 		vrLen = 1441;
 		vrLoc = 7775;
@@ -1482,7 +1495,7 @@
 		fRef = 7790198E0C07548A00326F66 /* KappaAppDelegate.py */;
 		name = "KappaAppDelegate.py: 253";
 		rLen = 0;
-		rLoc = 8634;
+		rLoc = 8377;
 		rType = 0;
 		vrLen = 640;
 		vrLoc = 8453;
@@ -1492,7 +1505,7 @@
 		fRef = 7790198E0C07548A00326F66 /* KappaAppDelegate.py */;
 		name = "KappaAppDelegate.py: 263";
 		rLen = 0;
-		rLoc = 9516;
+		rLoc = 9259;
 		rType = 0;
 		vrLen = 1440;
 		vrLoc = 7823;
@@ -1502,7 +1515,7 @@
 		fRef = 7790198E0C07548A00326F66 /* KappaAppDelegate.py */;
 		name = "KappaAppDelegate.py: 253";
 		rLen = 0;
-		rLoc = 8634;
+		rLoc = 8377;
 		rType = 0;
 		vrLen = 712;
 		vrLoc = 8453;
@@ -1512,7 +1525,7 @@
 		fRef = 7790198E0C07548A00326F66 /* KappaAppDelegate.py */;
 		name = "KappaAppDelegate.py: 264";
 		rLen = 0;
-		rLoc = 9516;
+		rLoc = 9259;
 		rType = 0;
 		vrLen = 1516;
 		vrLoc = 7828;
@@ -1522,7 +1535,7 @@
 		fRef = 7790198E0C07548A00326F66 /* KappaAppDelegate.py */;
 		name = "KappaAppDelegate.py: 253";
 		rLen = 0;
-		rLoc = 8634;
+		rLoc = 8377;
 		rType = 0;
 		vrLen = 759;
 		vrLoc = 8453;
@@ -1532,7 +1545,7 @@
 		fRef = 7790198E0C07548A00326F66 /* KappaAppDelegate.py */;
 		name = "KappaAppDelegate.py: 258";
 		rLen = 0;
-		rLoc = 8822;
+		rLoc = 8565;
 		rType = 0;
 		vrLen = 1555;
 		vrLoc = 7828;
@@ -1542,7 +1555,7 @@
 		fRef = 7790198E0C07548A00326F66 /* KappaAppDelegate.py */;
 		name = "KappaAppDelegate.py: 253";
 		rLen = 0;
-		rLoc = 8634;
+		rLoc = 8377;
 		rType = 0;
 		vrLen = 748;
 		vrLoc = 8453;
@@ -1552,7 +1565,7 @@
 		fRef = 7790198E0C07548A00326F66 /* KappaAppDelegate.py */;
 		name = "KappaAppDelegate.py: 265";
 		rLen = 0;
-		rLoc = 9435;
+		rLoc = 9178;
 		rType = 0;
 		vrLen = 1516;
 		vrLoc = 7926;
@@ -1562,7 +1575,7 @@
 		fRef = 7790198E0C07548A00326F66 /* KappaAppDelegate.py */;
 		name = "KappaAppDelegate.py: 253";
 		rLen = 0;
-		rLoc = 8634;
+		rLoc = 8377;
 		rType = 0;
 		vrLen = 739;
 		vrLoc = 8453;
@@ -1572,7 +1585,7 @@
 		fRef = 7790198E0C07548A00326F66 /* KappaAppDelegate.py */;
 		name = "KappaAppDelegate.py: 262";
 		rLen = 0;
-		rLoc = 9352;
+		rLoc = 9095;
 		rType = 0;
 		vrLen = 1478;
 		vrLoc = 7926;
@@ -1582,7 +1595,7 @@
 		fRef = 7790198E0C07548A00326F66 /* KappaAppDelegate.py */;
 		name = "KappaAppDelegate.py: 253";
 		rLen = 0;
-		rLoc = 8634;
+		rLoc = 8377;
 		rType = 0;
 		vrLen = 710;
 		vrLoc = 8453;
@@ -1592,7 +1605,7 @@
 		fRef = 7790198E0C07548A00326F66 /* KappaAppDelegate.py */;
 		name = "KappaAppDelegate.py: 264";
 		rLen = 0;
-		rLoc = 9409;
+		rLoc = 9152;
 		rType = 0;
 		vrLen = 1453;
 		vrLoc = 8059;
@@ -1602,7 +1615,7 @@
 		fRef = 7790198E0C07548A00326F66 /* KappaAppDelegate.py */;
 		name = "KappaAppDelegate.py: 253";
 		rLen = 0;
-		rLoc = 8634;
+		rLoc = 8377;
 		rType = 0;
 		vrLen = 742;
 		vrLoc = 8453;
@@ -1612,7 +1625,7 @@
 		fRef = 7790198E0C07548A00326F66 /* KappaAppDelegate.py */;
 		name = "KappaAppDelegate.py: 262";
 		rLen = 0;
-		rLoc = 8961;
+		rLoc = 8704;
 		rType = 0;
 		vrLen = 1448;
 		vrLoc = 8059;
@@ -1622,7 +1635,7 @@
 		fRef = 7790198E0C07548A00326F66 /* KappaAppDelegate.py */;
 		name = "KappaAppDelegate.py: 253";
 		rLen = 0;
-		rLoc = 8634;
+		rLoc = 8377;
 		rType = 0;
 		vrLen = 775;
 		vrLoc = 8453;
@@ -1632,7 +1645,7 @@
 		fRef = 7790198E0C07548A00326F66 /* KappaAppDelegate.py */;
 		name = "KappaAppDelegate.py: 265";
 		rLen = 0;
-		rLoc = 9516;
+		rLoc = 9259;
 		rType = 0;
 		vrLen = 1495;
 		vrLoc = 8059;
@@ -1642,7 +1655,7 @@
 		fRef = 7790198E0C07548A00326F66 /* KappaAppDelegate.py */;
 		name = "KappaAppDelegate.py: 253";
 		rLen = 0;
-		rLoc = 8634;
+		rLoc = 8377;
 		rType = 0;
 		vrLen = 753;
 		vrLoc = 8453;
@@ -1652,7 +1665,7 @@
 		fRef = 7790198E0C07548A00326F66 /* KappaAppDelegate.py */;
 		name = "KappaAppDelegate.py: 263";
 		rLen = 0;
-		rLoc = 9298;
+		rLoc = 9041;
 		rType = 0;
 		vrLen = 1483;
 		vrLoc = 8059;
@@ -1662,7 +1675,7 @@
 		fRef = 7790198E0C07548A00326F66 /* KappaAppDelegate.py */;
 		name = "KappaAppDelegate.py: 253";
 		rLen = 0;
-		rLoc = 8634;
+		rLoc = 8377;
 		rType = 0;
 		vrLen = 820;
 		vrLoc = 8453;
@@ -1672,7 +1685,7 @@
 		fRef = 7790198E0C07548A00326F66 /* KappaAppDelegate.py */;
 		name = "KappaAppDelegate.py: 269";
 		rLen = 0;
-		rLoc = 9339;
+		rLoc = 9082;
 		rType = 0;
 		vrLen = 1610;
 		vrLoc = 8059;
@@ -1682,7 +1695,7 @@
 		fRef = 7790198E0C07548A00326F66 /* KappaAppDelegate.py */;
 		name = "KappaAppDelegate.py: 253";
 		rLen = 0;
-		rLoc = 8634;
+		rLoc = 8377;
 		rType = 0;
 		vrLen = 822;
 		vrLoc = 8453;
@@ -1692,7 +1705,7 @@
 		fRef = 7790198E0C07548A00326F66 /* KappaAppDelegate.py */;
 		name = "KappaAppDelegate.py: 263";
 		rLen = 0;
-		rLoc = 9059;
+		rLoc = 8802;
 		rType = 0;
 		vrLen = 1612;
 		vrLoc = 7992;
@@ -1702,7 +1715,7 @@
 		fRef = 7790198E0C07548A00326F66 /* KappaAppDelegate.py */;
 		name = "KappaAppDelegate.py: 253";
 		rLen = 0;
-		rLoc = 8634;
+		rLoc = 8377;
 		rType = 0;
 		vrLen = 825;
 		vrLoc = 8453;
@@ -1712,7 +1725,7 @@
 		fRef = 7790198E0C07548A00326F66 /* KappaAppDelegate.py */;
 		name = "KappaAppDelegate.py: 265";
 		rLen = 0;
-		rLoc = 9139;
+		rLoc = 8882;
 		rType = 0;
 		vrLen = 1615;
 		vrLoc = 7992;
@@ -1722,7 +1735,7 @@
 		fRef = 7790198E0C07548A00326F66 /* KappaAppDelegate.py */;
 		name = "KappaAppDelegate.py: 253";
 		rLen = 0;
-		rLoc = 8634;
+		rLoc = 8377;
 		rType = 0;
 		vrLen = 775;
 		vrLoc = 8453;
@@ -1732,7 +1745,7 @@
 		fRef = 7790198E0C07548A00326F66 /* KappaAppDelegate.py */;
 		name = "KappaAppDelegate.py: 267";
 		rLen = 0;
-		rLoc = 9170;
+		rLoc = 8913;
 		rType = 0;
 		vrLen = 1446;
 		vrLoc = 8348;
@@ -1742,7 +1755,7 @@
 		fRef = 7790198E0C07548A00326F66 /* KappaAppDelegate.py */;
 		name = "KappaAppDelegate.py: 253";
 		rLen = 0;
-		rLoc = 8634;
+		rLoc = 8377;
 		rType = 0;
 		vrLen = 791;
 		vrLoc = 8453;
@@ -1752,7 +1765,7 @@
 		fRef = 7790198E0C07548A00326F66 /* KappaAppDelegate.py */;
 		name = "KappaAppDelegate.py: 267";
 		rLen = 0;
-		rLoc = 9170;
+		rLoc = 8913;
 		rType = 0;
 		vrLen = 1462;
 		vrLoc = 8348;
@@ -1762,7 +1775,7 @@
 		fRef = 7790198E0C07548A00326F66 /* KappaAppDelegate.py */;
 		name = "KappaAppDelegate.py: 253";
 		rLen = 0;
-		rLoc = 8634;
+		rLoc = 8377;
 		rType = 0;
 		vrLen = 819;
 		vrLoc = 8453;
@@ -1772,7 +1785,7 @@
 		fRef = 7790198E0C07548A00326F66 /* KappaAppDelegate.py */;
 		name = "KappaAppDelegate.py: 260";
 		rLen = 0;
-		rLoc = 8909;
+		rLoc = 8652;
 		rType = 0;
 		vrLen = 1490;
 		vrLoc = 8348;
@@ -1782,7 +1795,7 @@
 		fRef = 7790198E0C07548A00326F66 /* KappaAppDelegate.py */;
 		name = "KappaAppDelegate.py: 253";
 		rLen = 0;
-		rLoc = 8634;
+		rLoc = 8377;
 		rType = 0;
 		vrLen = 740;
 		vrLoc = 8453;
@@ -1792,7 +1805,7 @@
 		fRef = 7790198E0C07548A00326F66 /* KappaAppDelegate.py */;
 		name = "KappaAppDelegate.py: 258";
 		rLen = 0;
-		rLoc = 8764;
+		rLoc = 8507;
 		rType = 0;
 		vrLen = 1454;
 		vrLoc = 8348;
@@ -1802,7 +1815,7 @@
 		fRef = 7790198E0C07548A00326F66 /* KappaAppDelegate.py */;
 		name = "KappaAppDelegate.py: 253";
 		rLen = 0;
-		rLoc = 8634;
+		rLoc = 8377;
 		rType = 0;
 		vrLen = 751;
 		vrLoc = 8453;
@@ -1812,7 +1825,7 @@
 		fRef = 7790198E0C07548A00326F66 /* KappaAppDelegate.py */;
 		name = "KappaAppDelegate.py: 261";
 		rLen = 0;
-		rLoc = 8822;
+		rLoc = 8565;
 		rType = 0;
 		vrLen = 1413;
 		vrLoc = 8348;
@@ -1822,7 +1835,7 @@
 		fRef = 7790198E0C07548A00326F66 /* KappaAppDelegate.py */;
 		name = "KappaAppDelegate.py: 253";
 		rLen = 0;
-		rLoc = 8634;
+		rLoc = 8377;
 		rType = 0;
 		vrLen = 779;
 		vrLoc = 8453;
@@ -1832,9 +1845,140 @@
 		fRef = 7790198E0C07548A00326F66 /* KappaAppDelegate.py */;
 		name = "KappaAppDelegate.py: 260";
 		rLen = 0;
-		rLoc = 8822;
+		rLoc = 8565;
 		rType = 0;
 		vrLen = 1450;
 		vrLoc = 8348;
+	};
+	BE618B5C0E6E2B750037511A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 7790198E0C07548A00326F66 /* KappaAppDelegate.py */;
+		name = "KappaAppDelegate.py: 250";
+		rLen = 0;
+		rLoc = 8377;
+		rType = 0;
+		vrLen = 806;
+		vrLoc = 8458;
+	};
+	BE618B5D0E6E2B750037511A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 7790198E0C07548A00326F66 /* KappaAppDelegate.py */;
+		name = "KappaAppDelegate.py: 155";
+		rLen = 0;
+		rLoc = 5130;
+		rType = 0;
+		vrLen = 1573;
+		vrLoc = 4726;
+	};
+	BE618B5E0E6E2CE00037511A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 7790198E0C07548A00326F66 /* KappaAppDelegate.py */;
+		name = "KappaAppDelegate.py: 250";
+		rLen = 0;
+		rLoc = 8377;
+		rType = 0;
+		vrLen = 726;
+		vrLoc = 8448;
+	};
+	BE618B5F0E6E2CE00037511A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 7790198E0C07548A00326F66 /* KappaAppDelegate.py */;
+		name = "KappaAppDelegate.py: 128";
+		rLen = 0;
+		rLoc = 3884;
+		rType = 0;
+		vrLen = 1845;
+		vrLoc = 3129;
+	};
+	BE618B610E6E2D240037511A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 7790198E0C07548A00326F66 /* KappaAppDelegate.py */;
+		name = "KappaAppDelegate.py: 247";
+		rLen = 0;
+		rLoc = 8377;
+		rType = 0;
+		vrLen = 886;
+		vrLoc = 8383;
+	};
+	BE618B620E6E2D240037511A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 7790198E0C07548A00326F66 /* KappaAppDelegate.py */;
+		name = "KappaAppDelegate.py: 145";
+		rLen = 0;
+		rLoc = 4799;
+		rType = 0;
+		vrLen = 1885;
+		vrLoc = 3842;
+	};
+	BE618B640E6EAA4B0037511A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 7790198E0C07548A00326F66 /* KappaAppDelegate.py */;
+		name = "KappaAppDelegate.py: 247";
+		rLen = 0;
+		rLoc = 8377;
+		rType = 0;
+		vrLen = 921;
+		vrLoc = 8383;
+	};
+	BE618B650E6EAA4B0037511A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 7790198E0C07548A00326F66 /* KappaAppDelegate.py */;
+		name = "KappaAppDelegate.py: 146";
+		rLen = 0;
+		rLoc = 4859;
+		rType = 0;
+		vrLen = 1922;
+		vrLoc = 3842;
+	};
+	BE618B680E6EAA8C0037511A /* twitter.py */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {655, 22526}}";
+			sepNavSelRange = "{70, 0}";
+			sepNavVisRange = "{0, 370}";
+		};
+	};
+	BE618B6C0E6EAAAC0037511A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 7790198E0C07548A00326F66 /* KappaAppDelegate.py */;
+		name = "KappaAppDelegate.py: 247";
+		rLen = 0;
+		rLoc = 8377;
+		rType = 0;
+		vrLen = 921;
+		vrLoc = 8383;
+	};
+	BE618B6D0E6EAAAC0037511A /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = BE618B680E6EAA8C0037511A /* twitter.py */;
+	};
+	BE618B6E0E6EAAAC0037511A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 7790198E0C07548A00326F66 /* KappaAppDelegate.py */;
+		name = "KappaAppDelegate.py: 247";
+		rLen = 0;
+		rLoc = 8377;
+		rType = 0;
+		vrLen = 921;
+		vrLoc = 8383;
+	};
+	BE618B6F0E6EAAAC0037511A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = BE618B680E6EAA8C0037511A /* twitter.py */;
+		name = "twitter.py: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 370;
+		vrLoc = 0;
+	};
+	BE618B700E6EAAAC0037511A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 7790198E0C07548A00326F66 /* KappaAppDelegate.py */;
+		name = "KappaAppDelegate.py: 146";
+		rLen = 0;
+		rLoc = 4859;
+		rType = 0;
+		vrLen = 1922;
+		vrLoc = 3842;
 	};
 }

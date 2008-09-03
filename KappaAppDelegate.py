@@ -113,7 +113,6 @@ class KappaAppDelegate(NSObject):
         self.progressIndicatorTimer = t
         
     def showPrefsWindow(self):
-        NSLog(u"show prefs window")
         self.prefsWindow.makeKeyAndOrderFront_(self)
 
     ''' Wrappers for Twitter Functionality '''
@@ -144,8 +143,8 @@ class KappaAppDelegate(NSObject):
             objcDict['user'] = tweet.user.screen_name
             objcDict['text'] = tweet.text
             return NSDictionary.dictionaryWithDictionary_(objcDict)
-            return objcDict
         self.twitDicts = [ convertTwit(x) for x in tweets ]
+        self.twitDictsController.rearrangeObjects()
 
         
     def checkForTweets(self):
@@ -153,17 +152,13 @@ class KappaAppDelegate(NSObject):
             try:
                 if self.retrievedOwnTimeline == False:
                     ownTweets = self.api.GetUserTimeline(self.username())
-                    NSLog(u"ownTweets: %s" % ownTweets)
                     self.integrateTweets(ownTweets)
                     
                 newTweets = self.api.GetFriendsTimeline()
-                NSLog(u"newTweets: %s" % newTweets)
                 self.integrateTweets(newTweets)
             except urllib2.URLError:
                 NSLog(u"Kappa: Couldn't connect to Twitter to retrieve tweets.")
-                
             self.updateTwitDict()
-            self.twitDictsController.rearrangeObjects()
                         
     def integrateTweets(self,tweets):
         for tweet in tweets:
@@ -173,7 +168,6 @@ class KappaAppDelegate(NSObject):
         tweets = self.twits
         wasInserted = False
         length = len(tweets)
-        NSLog(u"length: %s, tweet id: %s" % (length, tweet.id))
         for i in xrange(0,length,1):
             stored = tweets[i]
             if tweet.id == stored.id:

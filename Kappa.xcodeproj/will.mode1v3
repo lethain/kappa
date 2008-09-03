@@ -216,7 +216,7 @@
 						<key>_historyCapacity</key>
 						<integer>0</integer>
 						<key>bookmark</key>
-						<string>BE618B580E6E29AA0037511A</string>
+						<string>BE618B700E6EAAAC0037511A</string>
 						<key>history</key>
 						<array>
 							<string>BE618B070E6E1DA80037511A</string>
@@ -235,7 +235,7 @@
 				<key>PBXModuleWindowStatusBarHidden2</key>
 				<false/>
 				<key>RubberWindowFrame</key>
-				<string>528 96 783 682 0 0 1280 778 </string>
+				<string>302 96 783 682 0 0 1280 778 </string>
 			</dict>
 		</dict>
 	</array>
@@ -310,6 +310,7 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateExpansionKey</key>
 							<array>
 								<string>29B97314FDCFA39411CA2CEA</string>
+								<string>BE618B6B0E6EAA9A0037511A</string>
 								<string>080E96DDFE201D6D7F000001</string>
 								<string>29B97317FDCFA39411CA2CEA</string>
 								<string>1C37FABC05509CD000000102</string>
@@ -317,7 +318,7 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>4</integer>
+									<integer>2</integer>
 									<integer>1</integer>
 									<integer>0</integer>
 								</array>
@@ -358,7 +359,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>KappaAppDelegate.py</string>
+								<string>twitter.py</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -366,20 +367,22 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>KappaAppDelegate.py</string>
+										<string>twitter.py</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>BE618B570E6E29AA0037511A</string>
+										<string>BE618B6F0E6EAAAC0037511A</string>
 										<key>history</key>
 										<array>
 											<string>BE618A9A0E6DF3D80037511A</string>
-											<string>BE6189A70E6DDFAF0037511A</string>
+											<string>BE618B6C0E6EAAAC0037511A</string>
+											<string>BE618B6D0E6EAAAC0037511A</string>
 										</array>
 										<key>prevStack</key>
 										<array>
 											<string>BE6189A90E6DDFAF0037511A</string>
 											<string>BE618A9B0E6DF3D80037511A</string>
+											<string>BE618B6E0E6EAAAC0037511A</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -579,6 +582,7 @@
 		<string>BE6189AE0E6DDFAF0037511A</string>
 		<string>1C78EAAD065D492600B07095</string>
 		<string>BE618B0A0E6E1DEF0037511A</string>
+		<string>/Users/will/git/Kappa/Kappa.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
 	<string>303 108 924 557 0 0 1280 778 </string>
