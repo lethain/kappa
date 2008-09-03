@@ -299,7 +299,7 @@
 							<real>186</real>
 						</array>
 						<key>RubberWindowFrame</key>
-						<string>61 94 924 557 0 0 1280 778 </string>
+						<string>303 108 924 557 0 0 1280 778 </string>
 					</dict>
 					<key>Module</key>
 					<string>PBXSmartGroupTreeModule</string>
@@ -329,7 +329,7 @@
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>BE618AB20E6DF6FF0037511A</string>
+										<string>BE618AF70E6E16ED0037511A</string>
 										<key>history</key>
 										<array>
 											<string>BE618A9A0E6DF3D80037511A</string>
@@ -352,7 +352,7 @@
 								<key>Frame</key>
 								<string>{{0, 0}, {716, 338}}</string>
 								<key>RubberWindowFrame</key>
-								<string>61 94 924 557 0 0 1280 778 </string>
+								<string>303 108 924 557 0 0 1280 778 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
@@ -372,7 +372,7 @@
 								<key>Frame</key>
 								<string>{{0, 343}, {716, 173}}</string>
 								<key>RubberWindowFrame</key>
-								<string>61 94 924 557 0 0 1280 778 </string>
+								<string>303 108 924 557 0 0 1280 778 </string>
 							</dict>
 							<key>Module</key>
 							<string>XCDetailModule</string>
@@ -532,13 +532,15 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
+		<string>BE618AD40E6DFCB30037511A</string>
+		<string>BE618AD50E6DFCB30037511A</string>
 		<string>1CD10A99069EF8BA00B06720</string>
 		<string>BE6189AE0E6DDFAF0037511A</string>
 		<string>1C78EAAD065D492600B07095</string>
 		<string>/Users/will/git/Kappa/Kappa.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
-	<string>61 94 924 557 0 0 1280 778 </string>
+	<string>303 108 924 557 0 0 1280 778 </string>
 	<key>WindowToolsV3</key>
 	<array>
 		<dict>

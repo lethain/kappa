@@ -51,8 +51,8 @@ class KappaAppDelegate(NSObject):
     nextRetrieval = None
     twits = []
     twitDicts = []
-    api = None
-        
+    api = None    
+    retrievedOwnTimeline = False
     
     def restorePreferences(self):
         try:
@@ -80,6 +80,7 @@ class KappaAppDelegate(NSObject):
         for key in self.prefs:
             newDict[key] = self.prefs[key]
     
+    
         fout = open(self.pathForFile(USER_PREFS_FILE),'w')
         pickle.dump(newDict,fout)
         fout.close()
@@ -90,6 +91,7 @@ class KappaAppDelegate(NSObject):
         fout.close()
         
     def incrementProgressIndicator(self):
+        self.inputTextField.setBackgroundColor_(self.normalBackground)
         if self.timeProgressIndicator.doubleValue() >= 100.0:
             self.progressIndicatorTimer.invalidate()
             self.resetTime()
@@ -133,18 +135,23 @@ class KappaAppDelegate(NSObject):
     
     @objc.IBAction
     def submitTwit_(self,sender):
-        NSLog(u"submitting tweet")
-        #self.postMessage(self.inputTextField.stringValue())
-        self.inputTextField.setStringValue_(u"")
-        self.inputWindow.setTitle_(u"140")
+        self.postMessage(self.inputTextField.stringValue())
     
     def postMessage(self, msg):
-        self.recentTwit = self.api.PostUpdate(msg)
+        try:
+            status = self.api.PostUpdate(msg)
+            self.integrateTweets([status])
+            self.inputTextField.setStringValue_(u"")
+            self.inputWindow.setTitle_(u"140")
+            self.inputTextField.setBackgroundColor_(self.normalBackground)
+        except urllib2.URLError:            
+            self.inputTextField.setBackgroundColor_(self.warningBackground)
+            self.inputWindow.setTitle_(u"Couldn't connect To internet (%s)" % (int(140) - int(len(msg))))
         
     def updateTwitDict(self):
         def convertTwit(tweet):
-            objcDict = {} #NSMutableDictionary.alloc().init()
-            objcDict['time'] = self.kappaTime(datetime.datetime.utcfromtimestamp(tweet.created_at_in_seconds))
+            objcDict = {}
+            objcDict['time'] = NSDate.dateWithTimeIntervalSince1970_(tweet.created_at_in_seconds)
             objcDict['user'] = tweet.user.screen_name
             objcDict['text'] = tweet.text
             return NSDictionary.dictionaryWithDictionary_(objcDict)
@@ -158,32 +165,38 @@ class KappaAppDelegate(NSObject):
     def checkForTweets(self):
         if self.api is not None:
             try:
+                if self.retrievedOwnTimeline == False:
+                    ownTweets = self.api.GetUserTimeline(self.username())
+                    NSLog(u"ownTweets: %s" % ownTweets)
+                    self.integrateTweets(ownTweets)
+                    
                 newTweets = self.api.GetFriendsTimeline()
+                NSLog(u"newTweets: %s" % newTweets)
                 self.integrateTweets(newTweets)
             except urllib2.URLError:
-                pass
+                NSLog(u"Kappa: Failed to retrieve tweets.")
                 
             self.updateTwitDict()
-            NSLog(u"updated twit dict")
             self.twitDictsController.rearrangeObjects()
-            NSLog(u"rearranged array controller")
                         
     def integrateTweets(self,tweets):
         for tweet in tweets:
             self.integrateTweet(tweet)
-        NSLog(u"tweets: %s" % self.twits)
             
     def integrateTweet(self,tweet):
         tweets = self.twits
         wasInserted = False
-        for i in xrange(0,len(tweets),1):
+        length = len(tweets)
+        NSLog(u"length: %s, tweet id: %s" % (length, tweet.id))
+        for i in xrange(0,length,1):
             stored = tweets[i]
             if tweet.id == stored.id:
                 break
-            elif tweet.created_at_in_seconds > stored.created_at_in_seconds:
+            elif tweet.id > stored.id:
                 tweets.insert(i,tweet)
-                wasInserted = True
-        if not wasInserted:
+                break
+
+        if length == 0:
             tweets.insert(-1,tweet)
     
     def login(self):
@@ -192,13 +205,15 @@ class KappaAppDelegate(NSObject):
             return True
         return False
 
-            
-    
     ''' Application Delegate Methods '''   
     
     def awakeFromNib(self):
         self.restorePreferences()
         self.restoreTweets()
+        
+        self.normalBackground = self.inputTextField.backgroundColor()
+        self.warningBackground = NSColor.colorWithCalibratedRed_green_blue_alpha_(0.7, 0.65, 0.6, 0.9)
+        self.warningBackground.retain()
                             
     def applicationWillTerminate_(self,sender):
         self.storePreferences()
