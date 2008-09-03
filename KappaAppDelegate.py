@@ -243,6 +243,7 @@ class KappaAppDelegate(NSObject):
         self.warningBackground.retain()
         
         self.initializedResizing = False
+        self.defaultHeaderView = self.tableView.headerView()
                             
     def applicationWillTerminate_(self,sender):
         self.storePreferences()
@@ -253,10 +254,18 @@ class KappaAppDelegate(NSObject):
             self.resetTime()
         else:
             self.showPrefsWindow()
+            
+    def hideColumnHeaders(self):
+        self.tableView.setHeaderView_(None)
+            
+        
+    def showColumnHeaders(self):
+        self.tableView.setHeaderView_(self.defaultHeaderView)
     
     def windowDidBecomeMain_(self,sender):
         self.mainWindow.setTitle_(u"Kappa (%s)" % (int(140) - int(len(self.inputTextField.stringValue()))))
-        if self.initializedResizing == True:        
+        if self.initializedResizing == True:
+            self.showColumnHeaders()
             scrollView = self.tableView.superview().superview()
             f = scrollView.frame()
             f.origin.y = f.origin.y + 36
@@ -272,6 +281,7 @@ class KappaAppDelegate(NSObject):
         
     def windowDidResignMain_(self,sender):
         self.mainWindow.setTitle_(u"Kappa")
+        self.hideColumnHeaders()
         self.searchField.setHidden_(True)
         self.inputTextField.setHidden_(True)
         
