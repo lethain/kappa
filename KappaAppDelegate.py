@@ -255,11 +255,21 @@ class KappaAppDelegate(NSObject):
     @objc.IBAction
     def search_(self, searchField):
         searchStr = searchField.stringValue()
-        NSLog(u"searchField: %s" % searchField)
+        if searchStr == u"":
+            self.updateTwitDict()
+            return
         try:
-            SEARCH_RE = re.compile(searchStr)
-            
+            SEARCH_RE = re.compile(searchStr, re.MULTILINE|re.IGNORECASE)
             searchField.setTextColor_(NSColor.blackColor())
+            def match_search(tweet):
+                if SEARCH_RE.match(tweet.user.screen_name) is not None:
+                    return True
+                if SEARCH_RE.match(tweet.text) is not None:
+                    return True
+                return False
+            matches = [ x for x in self.twits if match_search(x) ]
+            self.updateTwitDict(matches)
+            
         except re.error:
             searchField.setTextColor_(NSColor.redColor())
             NSLog(u"Kappa: '%s' is not a valid regular expression." % searchStr)
