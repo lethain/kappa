@@ -748,7 +748,7 @@
 				<int key="NSWindowBacking">2</int>
 				<string key="NSWindowRect">{{247, 365}, {480, 360}}</string>
 				<int key="NSWTFlags">1946157056</int>
-				<string key="NSWindowTitle">Kappa</string>
+				<string key="NSWindowTitle">Kappa (140)</string>
 				<string key="NSWindowClass">NSWindow</string>
 				<nil key="NSViewClass"/>
 				<string key="NSWindowContentMaxSize">{3.40282e+38, 3.40282e+38}</string>
@@ -848,7 +848,7 @@
 																	<bool key="EncodedWithXMLCoder">YES</bool>
 																	<string>%m/%d/%y</string>
 																	<integer value="0" id="8"/>
-																	<integer value="1040" id="948507066"/>
+																	<integer value="1040" id="446589113"/>
 																	<integer value="1" id="9"/>
 																</object>
 															</object>
@@ -910,7 +910,7 @@
 													<reference key="NSTableView" ref="800466935"/>
 												</object>
 												<object class="NSTableColumn" id="583387791">
-													<double key="NSWidth">3.350000e+02</double>
+													<double key="NSWidth">3.360000e+02</double>
 													<double key="NSMinWidth">4.000000e+01</double>
 													<double key="NSMaxWidth">1.000000e+03</double>
 													<object class="NSTableHeaderCell" key="NSHeaderCell">
@@ -948,7 +948,7 @@
 												</object>
 											</object>
 											<double key="NSRowHeight">5.000000e+01</double>
-											<int key="NSTvFlags">-761266176</int>
+											<int key="NSTvFlags">-759169024</int>
 											<int key="NSColumnAutoresizingStyle">4</int>
 											<int key="NSDraggingSourceMaskForLocal">15</int>
 											<int key="NSDraggingSourceMaskForNonLocal">0</int>
@@ -1267,7 +1267,7 @@
 										<object class="NSMutableArray" key="dict.values">
 											<bool key="EncodedWithXMLCoder">YES</bool>
 											<reference ref="9"/>
-											<reference ref="948507066"/>
+											<reference ref="446589113"/>
 											<reference ref="8"/>
 											<real value="5.000000e+00" id="447099656"/>
 											<reference ref="9"/>
@@ -1924,6 +1924,22 @@
 					</object>
 					<int key="connectionID">508</int>
 				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBOutletConnection" key="connection">
+						<string key="label">nextKeyView</string>
+						<reference key="source" ref="77469858"/>
+						<reference key="destination" ref="808798914"/>
+					</object>
+					<int key="connectionID">509</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBOutletConnection" key="connection">
+						<string key="label">nextKeyView</string>
+						<reference key="source" ref="808798914"/>
+						<reference key="destination" ref="77469858"/>
+					</object>
+					<int key="connectionID">510</int>
+				</object>
 			</object>
 			<object class="IBMutableOrderedSet" key="objectRecords">
 				<object class="NSArray" key="orderedObjects">
@@ -2449,9 +2465,9 @@
 						<object class="NSMutableArray" key="children">
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<reference ref="728222610"/>
+							<reference ref="808798914"/>
 							<reference ref="77469858"/>
 							<reference ref="611769196"/>
-							<reference ref="808798914"/>
 						</object>
 						<reference key="parent" ref="972006081"/>
 					</object>
@@ -3298,7 +3314,7 @@
 				</object>
 			</object>
 			<nil key="sourceID"/>
-			<int key="maxID">508</int>
+			<int key="maxID">510</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<object class="NSMutableArray" key="referencedPartialClassDescriptions">

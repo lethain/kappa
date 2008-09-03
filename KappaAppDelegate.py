@@ -158,11 +158,11 @@ class KappaAppDelegate(NSObject):
             status = self.api.PostUpdate(msg)
             self.integrateTweets([status])
             self.inputTextField.setStringValue_(u"")
-            #self.inputWindow.setTitle_(u"140")
+            self.mainWindow.setTitle_(u"Kappa (140)")
             self.inputTextField.setBackgroundColor_(self.normalBackground)
         except urllib2.URLError:            
             self.inputTextField.setBackgroundColor_(self.warningBackground)
-            #self.inputWindow.setTitle_(u"Couldn't connect To internet (%s)" % (int(140) - int(len(msg))))
+            self.mainWindow.setTitle_(u"Kappa [Couldn't connect To internet] (%s)" % (int(140) - int(len(msg))))
             NSLog(u"Kappa: Couldn't connect to internet to send tweet.")
         
     def updateTwitDict(self,tweets=None):
@@ -253,16 +253,9 @@ class KappaAppDelegate(NSObject):
             self.resetTime()
         else:
             self.showPrefsWindow()
-            
-    #def resizeInput(self):
-    #    mainFrame = self.mainWindow.frame()        
-    #    frameRect = NSMakeRect(mainFrame.origin.x,mainFrame.origin.y-40, mainFrame.size.width, 40)
-    #    #self.inputWindow.setFrame_display_(frameRect, True)
     
     def windowDidBecomeMain_(self,sender):
-        #self.inputWindow.orderFront_(self)
-        #self.resizeInput()
-        
+        self.mainWindow.setTitle_(u"Kappa (%s)" % (int(140) - int(len(self.inputTextField.stringValue()))))
         if self.initializedResizing == True:        
             scrollView = self.tableView.superview().superview()
             f = scrollView.frame()
@@ -278,7 +271,7 @@ class KappaAppDelegate(NSObject):
 
         
     def windowDidResignMain_(self,sender):
-        #self.inputWindow.orderOut_(self)
+        self.mainWindow.setTitle_(u"Kappa")
         self.searchField.setHidden_(True)
         self.inputTextField.setHidden_(True)
         
@@ -289,17 +282,11 @@ class KappaAppDelegate(NSObject):
         scrollView.setFrame_(f)
         scrollView.setNeedsDisplay_(True)
         
-    #def windowDidMove_(self,notification):
-    #    #self.resizeInput()
-        
-    #def windowDidResize_(self,notification):
-    #    self.resizeInput()
-        
     ''' NSControl delegate methods '''
     
     def controlTextDidChange_(self,notification):
         txt = self.inputTextField.stringValue()
-        #self.inputWindow.setTitle_(u"%s" % unicode(140-len(txt)))
+        self.mainWindow.setTitle_(u"Kappa (%s)" % unicode(140-len(txt)))
     
     ''' Application Delegate Utility Methods '''
             
