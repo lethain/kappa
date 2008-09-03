@@ -42,6 +42,10 @@ class KappaAppDelegate(NSObject):
     inputTextField = objc.IBOutlet()
     twitDictsController = objc.IBOutlet()
     
+    publicTimelineMenu = objc.IBOutlet()
+    friendsTimelineMenu = objc.IBOutlet()
+    atRepliesMenu = objc.IBOutlet()
+    
     prefs = None    # initialized in restorePreferences
     
     progressIndicatorTimer = None
@@ -51,6 +55,31 @@ class KappaAppDelegate(NSObject):
     twitDicts = []
     api = None    
     retrievedOwnTimeline = False
+    
+    ''' IBActions for picking feeds. '''
+    def toggleMenuItem(self,menuItem):
+        if menuItem.state() == 0:
+            menuItem.setState_(1)
+        else:
+            menuItem.setState_(0)
+    
+    @objc.IBAction
+    def togglePublicTimeline_(self,sender):
+        self.toggleMenuItem(self.publicTimelineMenu)
+        self.prefs['fetch_public_timeline'] = 1 if self.prefs['fetch_public_timeline'] == 0 else 0
+        
+        
+    @objc.IBAction        
+    def toggleFriendsTimeline_(self,sender):
+        self.toggleMenuItem(self.friendsTimelineMenu)
+        self.prefs['fetch_friends_timeline'] = 1 if self.prefs['fetch_friends_timeline'] == 0 else 0
+        
+    @objc.IBAction
+    def toggleAtReplies_(self,sender):
+        self.toggleMenuItem(self.atRepliesMenu)
+        self.prefs['fetch_at_replies'] = 1 if self.prefs['fetch_at_replies'] == 0 else 0
+    
+    ''' Serialization '''
     
     def restorePreferences(self):
         try:
@@ -62,6 +91,9 @@ class KappaAppDelegate(NSObject):
                 'retrievalInterval':10.0,
                 'username':'',
                 'password':'',
+                'fetch_at_replies':0,
+                'fetch_public_timeline':0,
+                'fetch_friends_timeline':1,
             }
             self.prefs = NSMutableDictionary.dictionaryWithDictionary_(defaults)
             
@@ -153,8 +185,13 @@ class KappaAppDelegate(NSObject):
                 if self.retrievedOwnTimeline == False:
                     ownTweets = self.api.GetUserTimeline(self.username())
                     self.integrateTweets(ownTweets)
-                    
-                newTweets = self.api.GetFriendsTimeline()
+                newTweets = []
+                if self.prefs['fetch_friends_timeline']:
+                    newTweets = newTweets + self.api.GetFriendsTimeline()
+                if self.prefs['fetch_at_replies']:
+                    newTweets = newTweets + self.api.GetReplies()
+                if self.prefs['fetch_public_timeline']:
+                    newTweets = newTweets + self.api.GetPublicTimeline()
                 self.integrateTweets(newTweets)
             except urllib2.URLError:
                 NSLog(u"Kappa: Couldn't connect to Twitter to retrieve tweets.")
@@ -188,9 +225,19 @@ class KappaAppDelegate(NSObject):
     ''' Application Delegate Methods '''   
     
     def awakeFromNib(self):
+        # load serialized data from disk
         self.restorePreferences()
         self.restoreTweets()
         
+        # setup menus on/off state
+        if self.prefs['fetch_at_replies']:
+            self.toggleMenuItem(self.atRepliesMenu)
+        if self.prefs['fetch_friends_timeline']:
+            self.toggleMenuItem(self.friendsTimelineMenu)
+        if self.prefs['fetch_public_timeline']:
+            self.toggleMenuItem(self.publicTimelineMenu)        
+        
+        # setup background stuff
         self.normalBackground = self.inputTextField.backgroundColor()
         self.warningBackground = NSColor.colorWithCalibratedRed_green_blue_alpha_(0.7, 0.65, 0.6, 0.9)
         self.warningBackground.retain()
