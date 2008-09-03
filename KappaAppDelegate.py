@@ -41,10 +41,11 @@ class KappaAppDelegate(NSObject):
     timeProgressIndicator = objc.IBOutlet()
     inputTextField = objc.IBOutlet()
     twitDictsController = objc.IBOutlet()
-    
+    searchField = objc.IBOutlet()
     publicTimelineMenu = objc.IBOutlet()
     friendsTimelineMenu = objc.IBOutlet()
     atRepliesMenu = objc.IBOutlet()
+    tableView = objc.IBOutlet()
     
     prefs = None    # initialized in restorePreferences
     
@@ -241,6 +242,8 @@ class KappaAppDelegate(NSObject):
         self.normalBackground = self.inputTextField.backgroundColor()
         self.warningBackground = NSColor.colorWithCalibratedRed_green_blue_alpha_(0.7, 0.65, 0.6, 0.9)
         self.warningBackground.retain()
+        
+        self.initializedResizing = False
                             
     def applicationWillTerminate_(self,sender):
         self.storePreferences()
@@ -261,8 +264,29 @@ class KappaAppDelegate(NSObject):
         self.inputWindow.orderFront_(self)
         self.resizeInput()
         
+        if self.initializedResizing == True:        
+            scrollView = self.tableView.superview().superview()
+            f = scrollView.frame()
+            #f.origin.y = f.origin.y - 0
+            f.size.height = f.size.height - 30
+            scrollView.setFrame_(f)
+            scrollView.setNeedsDisplay_(True)
+            self.searchField.setHidden_(False)
+        else:
+            self.initializedResizing = True
+        
+
+        
     def windowDidResignMain_(self,sender):
         self.inputWindow.orderOut_(self)
+        self.searchField.setHidden_(True)
+        
+        scrollView = self.tableView.superview().superview()
+        f = scrollView.frame()
+        #f.origin.y = f.origin.y + 0
+        f.size.height = f.size.height + 30
+        scrollView.setFrame_(f)
+        scrollView.setNeedsDisplay_(True)
         
     def windowDidMove_(self,notification):
         self.resizeInput()
