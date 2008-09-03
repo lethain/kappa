@@ -197,7 +197,48 @@
 	<key>Notifications</key>
 	<array/>
 	<key>OpenEditors</key>
-	<array/>
+	<array>
+		<dict>
+			<key>Content</key>
+			<dict>
+				<key>PBXProjectModuleGUID</key>
+				<string>BE618B0A0E6E1DEF0037511A</string>
+				<key>PBXProjectModuleLabel</key>
+				<string>KappaAppDelegate.py</string>
+				<key>PBXSplitModuleInNavigatorKey</key>
+				<dict>
+					<key>Split0</key>
+					<dict>
+						<key>PBXProjectModuleGUID</key>
+						<string>BE618B0B0E6E1DEF0037511A</string>
+						<key>PBXProjectModuleLabel</key>
+						<string>KappaAppDelegate.py</string>
+						<key>_historyCapacity</key>
+						<integer>0</integer>
+						<key>bookmark</key>
+						<string>BE618B1E0E6E23BF0037511A</string>
+						<key>history</key>
+						<array>
+							<string>BE618B070E6E1DA80037511A</string>
+						</array>
+					</dict>
+					<key>SplitCount</key>
+					<string>1</string>
+				</dict>
+				<key>StatusBarVisibility</key>
+				<true/>
+			</dict>
+			<key>Geometry</key>
+			<dict>
+				<key>Frame</key>
+				<string>{{0, 20}, {783, 641}}</string>
+				<key>PBXModuleWindowStatusBarHidden2</key>
+				<false/>
+				<key>RubberWindowFrame</key>
+				<string>409 96 783 682 0 0 1280 778 </string>
+			</dict>
+		</dict>
+	</array>
 	<key>PerspectiveWidths</key>
 	<array>
 		<integer>-1</integer>
@@ -231,6 +272,8 @@
 			<key>Layout</key>
 			<array>
 				<dict>
+					<key>BecomeActive</key>
+					<true/>
 					<key>ContentConfiguration</key>
 					<dict>
 						<key>PBXBottomSmartGroupGIDs</key>
@@ -310,8 +353,6 @@
 					<key>Dock</key>
 					<array>
 						<dict>
-							<key>BecomeActive</key>
-							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
@@ -329,7 +370,7 @@
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>BE618AF70E6E16ED0037511A</string>
+										<string>BE618B1D0E6E23BF0037511A</string>
 										<key>history</key>
 										<array>
 											<string>BE618A9A0E6DF3D80037511A</string>
@@ -537,7 +578,7 @@
 		<string>1CD10A99069EF8BA00B06720</string>
 		<string>BE6189AE0E6DDFAF0037511A</string>
 		<string>1C78EAAD065D492600B07095</string>
-		<string>/Users/will/git/Kappa/Kappa.xcodeproj</string>
+		<string>BE618B0A0E6E1DEF0037511A</string>
 	</array>
 	<key>WindowString</key>
 	<string>303 108 924 557 0 0 1280 778 </string>

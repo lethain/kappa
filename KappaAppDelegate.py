@@ -7,7 +7,7 @@
 #
 
 import twitter
-import os, objc, pickle, datetime, urllib2
+import os, objc, pickle, datetime, urllib2, re
 from Foundation import *
 from AppKit import *
 
@@ -38,8 +38,6 @@ class KappaAppDelegate(NSObject):
     mainWindow = objc.IBOutlet()
     inputWindow = objc.IBOutlet()
     prefsWindow = objc.IBOutlet()
-    lastTimeLabel = objc.IBOutlet()
-    nextTimeLabel = objc.IBOutlet()
     timeProgressIndicator = objc.IBOutlet()
     inputTextField = objc.IBOutlet()
     twitDictsController = objc.IBOutlet()
@@ -97,14 +95,7 @@ class KappaAppDelegate(NSObject):
             self.resetTime()
         else:
             self.timeProgressIndicator.incrementBy_(1.0)
-            
-    def kappaTime(self,dt):
-        'Takes a datetime and returns a string in "6:04 AM" format.'
-        amPm = 'AM' if dt.hour < 12 or dt.hour == 24 else 'PM'
-        hour = dt.hour - 12 if dt.hour > 12 else dt.hour
-        minute = dt.minute if dt.minute >= 10 else u"0%s" % dt.minute
-        return u"%s:%s %s" % (hour,minute,amPm)
-    
+
     def resetTime(self):
         self.timeProgressIndicator.setDoubleValue_(100.0)
         self.checkForTweets()
@@ -112,12 +103,6 @@ class KappaAppDelegate(NSObject):
         now = datetime.datetime.now()
         self.lastRetrieval = now
         self.nextRetrieval = now + datetime.timedelta(minutes=int(self.prefs['retrievalInterval']))
-        
-        # Update last retrieval label.
-        self.lastTimeLabel.setStringValue_(self.kappaTime(self.lastRetrieval))
-        
-        # Update next retrieval label.
-        self.nextTimeLabel.setStringValue_(self.kappaTime(self.nextRetrieval))
         
         # Reset progress indicator.
         self.timeProgressIndicator.setDoubleValue_(0.0)
@@ -147,8 +132,12 @@ class KappaAppDelegate(NSObject):
         except urllib2.URLError:            
             self.inputTextField.setBackgroundColor_(self.warningBackground)
             self.inputWindow.setTitle_(u"Couldn't connect To internet (%s)" % (int(140) - int(len(msg))))
+            NSLog(u"Kappa: Couldn't connect to internet to send tweet.")
         
-    def updateTwitDict(self):
+    def updateTwitDict(self,tweets=None):
+        if tweets is None:
+            tweets = self.twits[:50]
+    
         def convertTwit(tweet):
             objcDict = {}
             objcDict['time'] = NSDate.dateWithTimeIntervalSince1970_(tweet.created_at_in_seconds)
@@ -156,10 +145,7 @@ class KappaAppDelegate(NSObject):
             objcDict['text'] = tweet.text
             return NSDictionary.dictionaryWithDictionary_(objcDict)
             return objcDict
-
-        NSLog(u"self.twits: %s" % self.twits)
-        self.twitDicts = [ convertTwit(x) for x in self.twits[:50] ]
-        NSLog(u"self.twitDicts: %s" % self.twitDicts)
+        self.twitDicts = [ convertTwit(x) for x in tweets ]
 
         
     def checkForTweets(self):
@@ -174,7 +160,7 @@ class KappaAppDelegate(NSObject):
                 NSLog(u"newTweets: %s" % newTweets)
                 self.integrateTweets(newTweets)
             except urllib2.URLError:
-                NSLog(u"Kappa: Failed to retrieve tweets.")
+                NSLog(u"Kappa: Couldn't connect to Twitter to retrieve tweets.")
                 
             self.updateTwitDict()
             self.twitDictsController.rearrangeObjects()
@@ -261,6 +247,16 @@ class KappaAppDelegate(NSObject):
         
     def pathForFile(self,filename):
         return self.applicationSupportFolder().stringByAppendingPathComponent_(filename)
+        
+    ''' Support for NSSearchField '''
+    
+    
+    
+    @objc.IBAction
+    def search_(self, searchField):
+        searchStr = searchField.stringValue()
+        
+    
         
     ''' Accessors and mutators '''
     
