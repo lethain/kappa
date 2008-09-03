@@ -282,6 +282,8 @@
 			BE618C0D0E6EB98D0037511A /* PBXTextBookmark */ = BE618C0D0E6EB98D0037511A /* PBXTextBookmark */;
 			BE618C0F0E6EBB4E0037511A /* PBXTextBookmark */ = BE618C0F0E6EBB4E0037511A /* PBXTextBookmark */;
 			BE618C100E6EBB4E0037511A /* PBXTextBookmark */ = BE618C100E6EBB4E0037511A /* PBXTextBookmark */;
+			BE618C120E6EBBA90037511A /* PBXTextBookmark */ = BE618C120E6EBBA90037511A /* PBXTextBookmark */;
+			BE618C130E6EBBA90037511A /* PBXTextBookmark */ = BE618C130E6EBBA90037511A /* PBXTextBookmark */;
 		};
 		sourceControlManager = BE6188880E6CBC370037511A /* Source Control */;
 		userBuildSettings = {
@@ -298,7 +300,7 @@
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {724, 4774}}";
 			sepNavSelRange = "{8586, 0}";
-			sepNavVisRange = "{7459, 1718}";
+			sepNavVisRange = "{7459, 1648}";
 		};
 	};
 	8D1107260486CEB800E47090 /* Kappa */ = {
@@ -2008,7 +2010,7 @@
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {655, 22372}}";
 			sepNavSelRange = "{26592, 43}";
-			sepNavVisRange = "{26269, 760}";
+			sepNavVisRange = "{26269, 720}";
 		};
 	};
 	BE618B6C0E6EAAAC0037511A /* PBXTextBookmark */ = {
@@ -2807,6 +2809,26 @@
 		rLoc = 8586;
 		rType = 0;
 		vrLen = 1718;
+		vrLoc = 7459;
+	};
+	BE618C120E6EBBA90037511A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = BE618B680E6EAA8C0037511A /* twitter.py */;
+		name = "twitter.py: 936";
+		rLen = 43;
+		rLoc = 26592;
+		rType = 0;
+		vrLen = 720;
+		vrLoc = 26269;
+	};
+	BE618C130E6EBBA90037511A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 7790198E0C07548A00326F66 /* KappaAppDelegate.py */;
+		name = "KappaAppDelegate.py: 245";
+		rLen = 0;
+		rLoc = 8586;
+		rType = 0;
+		vrLen = 1648;
 		vrLoc = 7459;
 	};
 }
