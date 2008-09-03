@@ -216,7 +216,7 @@
 						<key>_historyCapacity</key>
 						<integer>0</integer>
 						<key>bookmark</key>
-						<string>BE618C7A0E6EC94A0037511A</string>
+						<string>BE618C920E6ECCAA0037511A</string>
 						<key>history</key>
 						<array>
 							<string>BE618C1F0E6EBEE80037511A</string>
@@ -579,7 +579,6 @@
 		<string>BE618C330E6EC0480037511A</string>
 		<string>1CD10A99069EF8BA00B06720</string>
 		<string>BE6189AE0E6DDFAF0037511A</string>
-		<string>/Users/will/git/Kappa/Kappa.xcodeproj</string>
 		<string>1C78EAAD065D492600B07095</string>
 		<string>BE618C230E6EBEEC0037511A</string>
 	</array>

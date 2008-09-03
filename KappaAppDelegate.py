@@ -36,7 +36,6 @@ USER_PREFS_FILE = 'user.prefs'
 
 class KappaAppDelegate(NSObject):
     mainWindow = objc.IBOutlet()
-    inputWindow = objc.IBOutlet()
     prefsWindow = objc.IBOutlet()
     timeProgressIndicator = objc.IBOutlet()
     inputTextField = objc.IBOutlet()
@@ -159,11 +158,11 @@ class KappaAppDelegate(NSObject):
             status = self.api.PostUpdate(msg)
             self.integrateTweets([status])
             self.inputTextField.setStringValue_(u"")
-            self.inputWindow.setTitle_(u"140")
+            #self.inputWindow.setTitle_(u"140")
             self.inputTextField.setBackgroundColor_(self.normalBackground)
         except urllib2.URLError:            
             self.inputTextField.setBackgroundColor_(self.warningBackground)
-            self.inputWindow.setTitle_(u"Couldn't connect To internet (%s)" % (int(140) - int(len(msg))))
+            #self.inputWindow.setTitle_(u"Couldn't connect To internet (%s)" % (int(140) - int(len(msg))))
             NSLog(u"Kappa: Couldn't connect to internet to send tweet.")
         
     def updateTwitDict(self,tweets=None):
@@ -255,50 +254,52 @@ class KappaAppDelegate(NSObject):
         else:
             self.showPrefsWindow()
             
-    def resizeInput(self):
-        mainFrame = self.mainWindow.frame()        
-        frameRect = NSMakeRect(mainFrame.origin.x,mainFrame.origin.y-40, mainFrame.size.width, 40)
-        self.inputWindow.setFrame_display_(frameRect, True)
+    #def resizeInput(self):
+    #    mainFrame = self.mainWindow.frame()        
+    #    frameRect = NSMakeRect(mainFrame.origin.x,mainFrame.origin.y-40, mainFrame.size.width, 40)
+    #    #self.inputWindow.setFrame_display_(frameRect, True)
     
     def windowDidBecomeMain_(self,sender):
-        self.inputWindow.orderFront_(self)
-        self.resizeInput()
+        #self.inputWindow.orderFront_(self)
+        #self.resizeInput()
         
         if self.initializedResizing == True:        
             scrollView = self.tableView.superview().superview()
             f = scrollView.frame()
-            #f.origin.y = f.origin.y - 0
-            f.size.height = f.size.height - 30
+            f.origin.y = f.origin.y + 36
+            f.size.height = f.size.height - 66
             scrollView.setFrame_(f)
             scrollView.setNeedsDisplay_(True)
             self.searchField.setHidden_(False)
+            self.inputTextField.setHidden_(False)
         else:
             self.initializedResizing = True
         
 
         
     def windowDidResignMain_(self,sender):
-        self.inputWindow.orderOut_(self)
+        #self.inputWindow.orderOut_(self)
         self.searchField.setHidden_(True)
+        self.inputTextField.setHidden_(True)
         
         scrollView = self.tableView.superview().superview()
         f = scrollView.frame()
-        #f.origin.y = f.origin.y + 0
-        f.size.height = f.size.height + 30
+        f.origin.y = f.origin.y - 36
+        f.size.height = f.size.height + 66
         scrollView.setFrame_(f)
         scrollView.setNeedsDisplay_(True)
         
-    def windowDidMove_(self,notification):
-        self.resizeInput()
+    #def windowDidMove_(self,notification):
+    #    #self.resizeInput()
         
-    def windowDidResize_(self,notification):
-        self.resizeInput()
+    #def windowDidResize_(self,notification):
+    #    self.resizeInput()
         
     ''' NSControl delegate methods '''
     
     def controlTextDidChange_(self,notification):
         txt = self.inputTextField.stringValue()
-        self.inputWindow.setTitle_(u"%s" % unicode(140-len(txt)))
+        #self.inputWindow.setTitle_(u"%s" % unicode(140-len(txt)))
     
     ''' Application Delegate Utility Methods '''
             
