@@ -17,6 +17,8 @@ from PyObjCTools import AppHelper
 import KappaAppDelegate
 import KAPProgressIndicator
 import KAPTwitFormatter
+import twitter
+import simplejson
 
 # pass control to AppKit
 AppHelper.runEventLoop()

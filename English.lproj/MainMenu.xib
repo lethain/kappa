@@ -8,8 +8,8 @@
 		<string key="IBDocument.HIToolboxVersion">352.00</string>
 		<object class="NSMutableArray" key="IBDocument.EditedObjectIDs">
 			<bool key="EncodedWithXMLCoder">YES</bool>
-			<integer value="493"/>
 			<integer value="372"/>
+			<integer value="493"/>
 		</object>
 		<object class="NSArray" key="IBDocument.PluginDependencies">
 			<bool key="EncodedWithXMLCoder">YES</bool>
@@ -780,13 +780,13 @@
 										<object class="NSTableView" id="800466935">
 											<reference key="NSNextResponder" ref="43645352"/>
 											<int key="NSvFlags">256</int>
-											<string key="NSFrameSize">{480, 251}</string>
+											<string key="NSFrameSize">{475, 251}</string>
 											<reference key="NSSuperview" ref="43645352"/>
 											<bool key="NSEnabled">YES</bool>
 											<object class="NSTableHeaderView" key="NSHeaderView" id="1047417927">
 												<reference key="NSNextResponder" ref="1040034964"/>
 												<int key="NSvFlags">256</int>
-												<string key="NSFrameSize">{480, 17}</string>
+												<string key="NSFrameSize">{475, 17}</string>
 												<reference key="NSSuperview" ref="1040034964"/>
 												<reference key="NSTableView" ref="800466935"/>
 											</object>
@@ -848,7 +848,7 @@
 																	<bool key="EncodedWithXMLCoder">YES</bool>
 																	<string>%m/%d/%y</string>
 																	<integer value="0" id="8"/>
-																	<integer value="1040" id="446589113"/>
+																	<integer value="1040" id="653334244"/>
 																	<integer value="1" id="9"/>
 																</object>
 															</object>
@@ -910,7 +910,7 @@
 													<reference key="NSTableView" ref="800466935"/>
 												</object>
 												<object class="NSTableColumn" id="583387791">
-													<double key="NSWidth">3.360000e+02</double>
+													<double key="NSWidth">3.310000e+02</double>
 													<double key="NSMinWidth">4.000000e+01</double>
 													<double key="NSMaxWidth">1.000000e+03</double>
 													<object class="NSTableHeaderCell" key="NSHeaderCell">
@@ -955,7 +955,7 @@
 											<bool key="NSAllowsTypeSelect">YES</bool>
 										</object>
 									</object>
-									<string key="NSFrame">{{1, 17}, {480, 251}}</string>
+									<string key="NSFrame">{{1, 17}, {475, 251}}</string>
 									<reference key="NSSuperview" ref="611769196"/>
 									<reference key="NSNextKeyView" ref="800466935"/>
 									<reference key="NSDocView" ref="800466935"/>
@@ -990,7 +990,7 @@
 										<bool key="EncodedWithXMLCoder">YES</bool>
 										<reference ref="1047417927"/>
 									</object>
-									<string key="NSFrame">{{1, 0}, {480, 17}}</string>
+									<string key="NSFrame">{{1, 0}, {475, 17}}</string>
 									<reference key="NSSuperview" ref="611769196"/>
 									<reference key="NSNextKeyView" ref="1047417927"/>
 									<reference key="NSDocView" ref="1047417927"/>
@@ -999,7 +999,7 @@
 								</object>
 								<reference ref="177988204"/>
 							</object>
-							<string key="NSFrame">{{-1, 36}, {482, 269}}</string>
+							<string key="NSFrame">{{1, 36}, {477, 269}}</string>
 							<reference key="NSSuperview" ref="439893737"/>
 							<reference key="NSNextKeyView" ref="43645352"/>
 							<int key="NSsFlags">530</int>
@@ -1267,7 +1267,7 @@
 										<object class="NSMutableArray" key="dict.values">
 											<bool key="EncodedWithXMLCoder">YES</bool>
 											<reference ref="9"/>
-											<reference ref="446589113"/>
+											<reference ref="653334244"/>
 											<reference ref="8"/>
 											<real value="5.000000e+00" id="447099656"/>
 											<reference ref="9"/>
@@ -1651,14 +1651,6 @@
 						<reference key="destination" ref="610635028"/>
 					</object>
 					<int key="connectionID">374</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBOutletConnection" key="connection">
-						<string key="label">inputWindow</string>
-						<reference key="source" ref="610635028"/>
-						<reference key="destination" ref="903644398"/>
-					</object>
-					<int key="connectionID">427</int>
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBOutletConnection" key="connection">
@@ -3194,9 +3186,9 @@
 					<reference ref="9"/>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<reference ref="9"/>
-					<string>{{125, 387}, {480, 360}}</string>
+					<string>{{132, 82}, {480, 360}}</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
-					<string>{{125, 387}, {480, 360}}</string>
+					<string>{{132, 82}, {480, 360}}</string>
 					<reference ref="9"/>
 					<string>{{238, 285}, {480, 360}}</string>
 					<reference ref="9"/>

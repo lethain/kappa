@@ -17,26 +17,6 @@
 		BE6189040E6D79710037511A /* KAPProgressIndicator.py in Resources */ = {isa = PBXBuildFile; fileRef = BE6189030E6D79710037511A /* KAPProgressIndicator.py */; };
 		BE61895D0E6D8FFE0037511A /* KAPTwitFormatter.py in Resources */ = {isa = PBXBuildFile; fileRef = BE61895C0E6D8FFE0037511A /* KAPTwitFormatter.py */; };
 		BE618B690E6EAA8C0037511A /* twitter.py in Resources */ = {isa = PBXBuildFile; fileRef = BE618B680E6EAA8C0037511A /* twitter.py */; };
-		BE618B8C0E6EAB0F0037511A /* __init__.py in Resources */ = {isa = PBXBuildFile; fileRef = BE618B760E6EAB0E0037511A /* __init__.py */; };
-		BE618B8E0E6EAB0F0037511A /* decoder.py in Resources */ = {isa = PBXBuildFile; fileRef = BE618B780E6EAB0E0037511A /* decoder.py */; };
-		BE618B8F0E6EAB0F0037511A /* encoder.py in Resources */ = {isa = PBXBuildFile; fileRef = BE618B790E6EAB0E0037511A /* encoder.py */; };
-		BE618B900E6EAB0F0037511A /* scanner.py in Resources */ = {isa = PBXBuildFile; fileRef = BE618B7A0E6EAB0E0037511A /* scanner.py */; };
-		BE618B910E6EAB0F0037511A /* __init__.py in Resources */ = {isa = PBXBuildFile; fileRef = BE618B7C0E6EAB0E0037511A /* __init__.py */; };
-		BE618B920E6EAB0F0037511A /* test_decode.py in Resources */ = {isa = PBXBuildFile; fileRef = BE618B7D0E6EAB0E0037511A /* test_decode.py */; };
-		BE618B930E6EAB0F0037511A /* test_default.py in Resources */ = {isa = PBXBuildFile; fileRef = BE618B7E0E6EAB0E0037511A /* test_default.py */; };
-		BE618B940E6EAB0F0037511A /* test_dump.py in Resources */ = {isa = PBXBuildFile; fileRef = BE618B7F0E6EAB0E0037511A /* test_dump.py */; };
-		BE618B950E6EAB0F0037511A /* test_encode_basestring_ascii.py in Resources */ = {isa = PBXBuildFile; fileRef = BE618B800E6EAB0E0037511A /* test_encode_basestring_ascii.py */; };
-		BE618B960E6EAB0F0037511A /* test_fail.py in Resources */ = {isa = PBXBuildFile; fileRef = BE618B810E6EAB0E0037511A /* test_fail.py */; };
-		BE618B970E6EAB0F0037511A /* test_float.py in Resources */ = {isa = PBXBuildFile; fileRef = BE618B820E6EAB0F0037511A /* test_float.py */; };
-		BE618B980E6EAB0F0037511A /* test_indent.py in Resources */ = {isa = PBXBuildFile; fileRef = BE618B830E6EAB0F0037511A /* test_indent.py */; };
-		BE618B990E6EAB0F0037511A /* test_pass1.py in Resources */ = {isa = PBXBuildFile; fileRef = BE618B840E6EAB0F0037511A /* test_pass1.py */; };
-		BE618B9A0E6EAB0F0037511A /* test_pass2.py in Resources */ = {isa = PBXBuildFile; fileRef = BE618B850E6EAB0F0037511A /* test_pass2.py */; };
-		BE618B9B0E6EAB0F0037511A /* test_pass3.py in Resources */ = {isa = PBXBuildFile; fileRef = BE618B860E6EAB0F0037511A /* test_pass3.py */; };
-		BE618B9C0E6EAB0F0037511A /* test_recursion.py in Resources */ = {isa = PBXBuildFile; fileRef = BE618B870E6EAB0F0037511A /* test_recursion.py */; };
-		BE618B9D0E6EAB0F0037511A /* test_scanstring.py in Resources */ = {isa = PBXBuildFile; fileRef = BE618B880E6EAB0F0037511A /* test_scanstring.py */; };
-		BE618B9E0E6EAB0F0037511A /* test_separators.py in Resources */ = {isa = PBXBuildFile; fileRef = BE618B890E6EAB0F0037511A /* test_separators.py */; };
-		BE618B9F0E6EAB0F0037511A /* test_unicode.py in Resources */ = {isa = PBXBuildFile; fileRef = BE618B8A0E6EAB0F0037511A /* test_unicode.py */; };
-		BE618BA00E6EAB0F0037511A /* tool.py in Resources */ = {isa = PBXBuildFile; fileRef = BE618B8B0E6EAB0F0037511A /* tool.py */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,26 +36,6 @@
 		BE6189030E6D79710037511A /* KAPProgressIndicator.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = KAPProgressIndicator.py; sourceTree = "<group>"; };
 		BE61895C0E6D8FFE0037511A /* KAPTwitFormatter.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = KAPTwitFormatter.py; sourceTree = "<group>"; };
 		BE618B680E6EAA8C0037511A /* twitter.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = twitter.py; sourceTree = "<group>"; };
-		BE618B760E6EAB0E0037511A /* __init__.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = __init__.py; sourceTree = "<group>"; };
-		BE618B780E6EAB0E0037511A /* decoder.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = decoder.py; sourceTree = "<group>"; };
-		BE618B790E6EAB0E0037511A /* encoder.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = encoder.py; sourceTree = "<group>"; };
-		BE618B7A0E6EAB0E0037511A /* scanner.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = scanner.py; sourceTree = "<group>"; };
-		BE618B7C0E6EAB0E0037511A /* __init__.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = __init__.py; sourceTree = "<group>"; };
-		BE618B7D0E6EAB0E0037511A /* test_decode.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = test_decode.py; sourceTree = "<group>"; };
-		BE618B7E0E6EAB0E0037511A /* test_default.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = test_default.py; sourceTree = "<group>"; };
-		BE618B7F0E6EAB0E0037511A /* test_dump.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = test_dump.py; sourceTree = "<group>"; };
-		BE618B800E6EAB0E0037511A /* test_encode_basestring_ascii.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = test_encode_basestring_ascii.py; sourceTree = "<group>"; };
-		BE618B810E6EAB0E0037511A /* test_fail.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = test_fail.py; sourceTree = "<group>"; };
-		BE618B820E6EAB0F0037511A /* test_float.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = test_float.py; sourceTree = "<group>"; };
-		BE618B830E6EAB0F0037511A /* test_indent.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = test_indent.py; sourceTree = "<group>"; };
-		BE618B840E6EAB0F0037511A /* test_pass1.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = test_pass1.py; sourceTree = "<group>"; };
-		BE618B850E6EAB0F0037511A /* test_pass2.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = test_pass2.py; sourceTree = "<group>"; };
-		BE618B860E6EAB0F0037511A /* test_pass3.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = test_pass3.py; sourceTree = "<group>"; };
-		BE618B870E6EAB0F0037511A /* test_recursion.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = test_recursion.py; sourceTree = "<group>"; };
-		BE618B880E6EAB0F0037511A /* test_scanstring.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = test_scanstring.py; sourceTree = "<group>"; };
-		BE618B890E6EAB0F0037511A /* test_separators.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = test_separators.py; sourceTree = "<group>"; };
-		BE618B8A0E6EAB0F0037511A /* test_unicode.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = test_unicode.py; sourceTree = "<group>"; };
-		BE618B8B0E6EAB0F0037511A /* tool.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = tool.py; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -173,45 +133,9 @@
 		BE618B6B0E6EAA9A0037511A /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
-				BE618B750E6EAB0E0037511A /* simplejson */,
 				BE618B680E6EAA8C0037511A /* twitter.py */,
 			);
 			name = Libraries;
-			sourceTree = "<group>";
-		};
-		BE618B750E6EAB0E0037511A /* simplejson */ = {
-			isa = PBXGroup;
-			children = (
-				BE618B760E6EAB0E0037511A /* __init__.py */,
-				BE618B780E6EAB0E0037511A /* decoder.py */,
-				BE618B790E6EAB0E0037511A /* encoder.py */,
-				BE618B7A0E6EAB0E0037511A /* scanner.py */,
-				BE618B7B0E6EAB0E0037511A /* tests */,
-				BE618B8B0E6EAB0F0037511A /* tool.py */,
-			);
-			path = simplejson;
-			sourceTree = "<group>";
-		};
-		BE618B7B0E6EAB0E0037511A /* tests */ = {
-			isa = PBXGroup;
-			children = (
-				BE618B7C0E6EAB0E0037511A /* __init__.py */,
-				BE618B7D0E6EAB0E0037511A /* test_decode.py */,
-				BE618B7E0E6EAB0E0037511A /* test_default.py */,
-				BE618B7F0E6EAB0E0037511A /* test_dump.py */,
-				BE618B800E6EAB0E0037511A /* test_encode_basestring_ascii.py */,
-				BE618B810E6EAB0E0037511A /* test_fail.py */,
-				BE618B820E6EAB0F0037511A /* test_float.py */,
-				BE618B830E6EAB0F0037511A /* test_indent.py */,
-				BE618B840E6EAB0F0037511A /* test_pass1.py */,
-				BE618B850E6EAB0F0037511A /* test_pass2.py */,
-				BE618B860E6EAB0F0037511A /* test_pass3.py */,
-				BE618B870E6EAB0F0037511A /* test_recursion.py */,
-				BE618B880E6EAB0F0037511A /* test_scanstring.py */,
-				BE618B890E6EAB0F0037511A /* test_separators.py */,
-				BE618B8A0E6EAB0F0037511A /* test_unicode.py */,
-			);
-			path = tests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -264,26 +188,6 @@
 				BE6189040E6D79710037511A /* KAPProgressIndicator.py in Resources */,
 				BE61895D0E6D8FFE0037511A /* KAPTwitFormatter.py in Resources */,
 				BE618B690E6EAA8C0037511A /* twitter.py in Resources */,
-				BE618B8C0E6EAB0F0037511A /* __init__.py in Resources */,
-				BE618B8E0E6EAB0F0037511A /* decoder.py in Resources */,
-				BE618B8F0E6EAB0F0037511A /* encoder.py in Resources */,
-				BE618B900E6EAB0F0037511A /* scanner.py in Resources */,
-				BE618B910E6EAB0F0037511A /* __init__.py in Resources */,
-				BE618B920E6EAB0F0037511A /* test_decode.py in Resources */,
-				BE618B930E6EAB0F0037511A /* test_default.py in Resources */,
-				BE618B940E6EAB0F0037511A /* test_dump.py in Resources */,
-				BE618B950E6EAB0F0037511A /* test_encode_basestring_ascii.py in Resources */,
-				BE618B960E6EAB0F0037511A /* test_fail.py in Resources */,
-				BE618B970E6EAB0F0037511A /* test_float.py in Resources */,
-				BE618B980E6EAB0F0037511A /* test_indent.py in Resources */,
-				BE618B990E6EAB0F0037511A /* test_pass1.py in Resources */,
-				BE618B9A0E6EAB0F0037511A /* test_pass2.py in Resources */,
-				BE618B9B0E6EAB0F0037511A /* test_pass3.py in Resources */,
-				BE618B9C0E6EAB0F0037511A /* test_recursion.py in Resources */,
-				BE618B9D0E6EAB0F0037511A /* test_scanstring.py in Resources */,
-				BE618B9E0E6EAB0F0037511A /* test_separators.py in Resources */,
-				BE618B9F0E6EAB0F0037511A /* test_unicode.py in Resources */,
-				BE618BA00E6EAB0F0037511A /* tool.py in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

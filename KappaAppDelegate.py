@@ -157,6 +157,7 @@ class KappaAppDelegate(NSObject):
         try:
             status = self.api.PostUpdate(msg)
             self.integrateTweets([status])
+            self.updateTwitDict()
             self.inputTextField.setStringValue_(u"")
             self.mainWindow.setTitle_(u"Kappa (140)")
             self.inputTextField.setBackgroundColor_(self.normalBackground)
@@ -168,6 +169,7 @@ class KappaAppDelegate(NSObject):
     def updateTwitDict(self,tweets=None):
         if tweets is None:
             tweets = self.twits[:50]
+            
     
         def convertTwit(tweet):
             objcDict = {}
@@ -241,6 +243,10 @@ class KappaAppDelegate(NSObject):
         self.normalBackground = self.inputTextField.backgroundColor()
         self.warningBackground = NSColor.colorWithCalibratedRed_green_blue_alpha_(0.7, 0.65, 0.6, 0.9)
         self.warningBackground.retain()
+        
+        # setup default sorting for array controller
+        sd = NSSortDescriptor.alloc().initWithKey_ascending_(u"time", False)
+        self.twitDictsController.setSortDescriptors_([sd])
         
         self.initializedResizing = False
         self.defaultHeaderView = self.tableView.headerView()

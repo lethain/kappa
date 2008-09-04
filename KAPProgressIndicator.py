@@ -6,11 +6,10 @@
 #  Copyright (c) 2008 __MyCompanyName__. All rights reserved.
 #
 
-import objc
-from AppKit import NSApp
+
 from Foundation import *
+from AppKit import NSApp,NSProgressIndicator
 
 class KAPProgressIndicator(NSProgressIndicator):
-    
     def mouseDown_(self,sender):
         NSApp.delegate().resetTime()
