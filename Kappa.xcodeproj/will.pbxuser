@@ -1,5 +1,12 @@
 // !$*UTF8*$!
 {
+	089C165DFE840E0CC02AAC07 /* English */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {655, 321}}";
+			sepNavSelRange = "{86, 0}";
+			sepNavVisRange = "{0, 94}";
+		};
+	};
 	29B97313FDCFA39411CA2CEA /* Project object */ = {
 		activeBuildConfigurationName = Release;
 		activeExecutable = BE6188780E6CBC280037511A /* Kappa */;
@@ -100,7 +107,7 @@
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {655, 742}}";
 			sepNavSelRange = "{1269, 0}";
-			sepNavVisRange = "{973, 836}";
+			sepNavVisRange = "{968, 841}";
 		};
 	};
 	32CA4F630368D1EE00C91783 /* Kappa_Prefix.pch */ = {
@@ -113,15 +120,15 @@
 	77631A3E0C0748CF005415CB /* main.py */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {655, 350}}";
-			sepNavSelRange = "{120, 0}";
-			sepNavVisRange = "{2, 488}";
+			sepNavSelRange = "{240, 0}";
+			sepNavVisRange = "{13, 477}";
 		};
 	};
 	7790198E0C07548A00326F66 /* KappaAppDelegate.py */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {724, 5110}}";
-			sepNavSelRange = "{4862, 0}";
-			sepNavVisRange = "{3487, 1662}";
+			sepNavIntBoundsRect = "{{0, 0}, {655, 5278}}";
+			sepNavSelRange = "{11420, 0}";
+			sepNavVisRange = "{10084, 801}";
 			sepNavWindowFrame = "{{411, 40}, {783, 738}}";
 		};
 	};
@@ -315,6 +322,41 @@
 		vrLen = 1007;
 		vrLoc = 758;
 	};
+	BE16AB020E700A2900EFAC8E /* simplejson.py */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {655, 5502}}";
+			sepNavSelRange = "{3099, 0}";
+			sepNavVisRange = "{2940, 595}";
+		};
+	};
+	BE16AB040E700A2900EFAC8E /* decoder.py */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {655, 4928}}";
+			sepNavSelRange = "{101, 0}";
+			sepNavVisRange = "{0, 515}";
+		};
+	};
+	BE16AB050E700A2900EFAC8E /* encoder.py */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {655, 5530}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 465}";
+		};
+	};
+	BE16AB060E700A2900EFAC8E /* scanner.py */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {655, 994}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 571}";
+		};
+	};
+	BE16AB170E700A2A00EFAC8E /* tool.py */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {655, 630}}";
+			sepNavSelRange = "{415, 0}";
+			sepNavVisRange = "{0, 558}";
+		};
+	};
 	BE6188780E6CBC280037511A /* Kappa */ = {
 		isa = PBXExecutable;
 		activeArgIndices = (
@@ -450,7 +492,7 @@
 	};
 	BE618B680E6EAA8C0037511A /* twitter.py */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {655, 22470}}";
+			sepNavIntBoundsRect = "{{0, 0}, {655, 22512}}";
 			sepNavSelRange = "{70, 0}";
 			sepNavVisRange = "{0, 370}";
 		};

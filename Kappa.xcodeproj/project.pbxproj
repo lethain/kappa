@@ -14,6 +14,11 @@
 		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
 		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+		BE16AB180E700A2A00EFAC8E /* simplejson.py in Resources */ = {isa = PBXBuildFile; fileRef = BE16AB020E700A2900EFAC8E /* simplejson.py */; };
+		BE16AB1A0E700A2A00EFAC8E /* decoder.py in Resources */ = {isa = PBXBuildFile; fileRef = BE16AB040E700A2900EFAC8E /* decoder.py */; };
+		BE16AB1B0E700A2A00EFAC8E /* encoder.py in Resources */ = {isa = PBXBuildFile; fileRef = BE16AB050E700A2900EFAC8E /* encoder.py */; };
+		BE16AB1C0E700A2A00EFAC8E /* scanner.py in Resources */ = {isa = PBXBuildFile; fileRef = BE16AB060E700A2900EFAC8E /* scanner.py */; };
+		BE16AB2C0E700A2A00EFAC8E /* tool.py in Resources */ = {isa = PBXBuildFile; fileRef = BE16AB170E700A2A00EFAC8E /* tool.py */; };
 		BE6189040E6D79710037511A /* KAPProgressIndicator.py in Resources */ = {isa = PBXBuildFile; fileRef = BE6189030E6D79710037511A /* KAPProgressIndicator.py */; };
 		BE61895D0E6D8FFE0037511A /* KAPTwitFormatter.py in Resources */ = {isa = PBXBuildFile; fileRef = BE61895C0E6D8FFE0037511A /* KAPTwitFormatter.py */; };
 		BE618B690E6EAA8C0037511A /* twitter.py in Resources */ = {isa = PBXBuildFile; fileRef = BE618B680E6EAA8C0037511A /* twitter.py */; };
@@ -33,6 +38,11 @@
 		77C8C1F80C07829500965286 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8D1107320486CEB800E47090 /* Kappa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kappa.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE16AB020E700A2900EFAC8E /* simplejson.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = simplejson.py; sourceTree = "<group>"; };
+		BE16AB040E700A2900EFAC8E /* decoder.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = decoder.py; sourceTree = "<group>"; };
+		BE16AB050E700A2900EFAC8E /* encoder.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = encoder.py; sourceTree = "<group>"; };
+		BE16AB060E700A2900EFAC8E /* scanner.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = scanner.py; sourceTree = "<group>"; };
+		BE16AB170E700A2A00EFAC8E /* tool.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = tool.py; sourceTree = "<group>"; };
 		BE6189030E6D79710037511A /* KAPProgressIndicator.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = KAPProgressIndicator.py; sourceTree = "<group>"; };
 		BE61895C0E6D8FFE0037511A /* KAPTwitFormatter.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = KAPTwitFormatter.py; sourceTree = "<group>"; };
 		BE618B680E6EAA8C0037511A /* twitter.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = twitter.py; sourceTree = "<group>"; };
@@ -130,9 +140,22 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		BE16AB010E700A2900EFAC8E /* simplejson */ = {
+			isa = PBXGroup;
+			children = (
+				BE16AB020E700A2900EFAC8E /* simplejson.py */,
+				BE16AB040E700A2900EFAC8E /* decoder.py */,
+				BE16AB050E700A2900EFAC8E /* encoder.py */,
+				BE16AB060E700A2900EFAC8E /* scanner.py */,
+				BE16AB170E700A2A00EFAC8E /* tool.py */,
+			);
+			path = simplejson;
+			sourceTree = "<group>";
+		};
 		BE618B6B0E6EAA9A0037511A /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
+				BE16AB010E700A2900EFAC8E /* simplejson */,
 				BE618B680E6EAA8C0037511A /* twitter.py */,
 			);
 			name = Libraries;
@@ -188,6 +211,11 @@
 				BE6189040E6D79710037511A /* KAPProgressIndicator.py in Resources */,
 				BE61895D0E6D8FFE0037511A /* KAPTwitFormatter.py in Resources */,
 				BE618B690E6EAA8C0037511A /* twitter.py in Resources */,
+				BE16AB180E700A2A00EFAC8E /* simplejson.py in Resources */,
+				BE16AB1A0E700A2A00EFAC8E /* decoder.py in Resources */,
+				BE16AB1B0E700A2A00EFAC8E /* encoder.py in Resources */,
+				BE16AB1C0E700A2A00EFAC8E /* scanner.py in Resources */,
+				BE16AB2C0E700A2A00EFAC8E /* tool.py in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
